@@ -13,7 +13,7 @@ To extend it, you create what Ember calls helpers.
 There are several ways in Ember to tackle a problem, but
 some are more optimal than others.
 
-I needed to create tags that use the “mailto” and “tel” attributes.
+I needed to create tags that use the **mailto** and **tel" attributes.
 So achieve this I created helpers so my templates are a little more
 semantic to read and understand what is happening.
 
@@ -25,52 +25,29 @@ doesn’t escape the html when rendering.
 
 Getting Started:
 
-Lets create the mailto helper to start:
+Lets create the mailto helper to start.
 
-{% codeblock lang:shell-script %}
+'''
 $ ember g helper mailtoLink
-{% endcodeblock %}
+'''
 
 Now navigate to the helper file and add this code.
 
-{% codeblock lang:js %}
-import Ember from 'ember';
+{% gist f27f6ee75de18b9a31af90fe4a700057 mailToLink.js %}
 
-export function mailtoLink(input) {
-   var mailTo = '<a href="mailto:' + input + '">';
-   mailTo += input + '</a>';
-   return new Ember.Handlebars.SafeString(mailTo);
-}
+Now create the telLink helper to start.
 
-export default Ember.Handlebars.makeBoundHelper(mailtoLink);
-{% endcodeblock %}
-
-Now create the telLink helper to start:
-
-{% codeblock lang:shell-script %}
+'''
 $ ember g helper telLink
-{% endcodeblock %}
+'''
 
 Now navigate to the helper file and add this code.
 
-{% codeblock lang:js %}
-import Ember from 'ember';
-
-export function telLink(input) {
-  var tel = '<a href="tel:' + input + '">';
-  tel += input + '</a>';
-  return new Ember.Handlebars.SafeString(tel);
-}
-
-export default Ember.Handlebars.makeBoundHelper(telLink);
-{% endcodeblock %}
+{% gist f27f6ee75de18b9a31af90fe4a700057 telLink.js %}
 
 Now to use these you can just call these in your templates like so:
 
-{% codeblock lang:html%}
-<p>Email: {{mailto-link email}}</p>
-<p>Phone: {{tel-link phone}}</p>
-{% endcodeblock %}
+{% gist f27f6ee75de18b9a31af90fe4a700057 template.html %}
 
 Ember makes lots of things really easy, but sometimes it not very clear how to
 do others. Hope you find this helpful.
