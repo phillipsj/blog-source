@@ -4,10 +4,8 @@ tags:
   - Electron
   - OSS
   - Node
-date: 2016-05-12 20:00:00
+date: 2016-05-13 20:00:00
 ---
-
-# Fun with Electron
 
 So I have had the privilege to get to learn a little about [Electron](http://electron.atom.io/). My team
 inherited an app that was built using [AppJS](http://appjs.com/). Since that project is deprecated,

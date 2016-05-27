@@ -4,10 +4,8 @@ tags:
   - Agile
   - Craftsmanship
   - Shipping
-date: 2015-04-19 20:00:00
+date: 2015-04-20 20:00:00
 ---
-
-# Inspiration, Software Faster
 
 I typically listen to podcasts while I mow my yard. I find mowing relaxing and
 enjoy doing it myself. However, some of the recent episodes of the podcasts that
@@ -24,18 +22,13 @@ from that episode. I just wanted to share and hope others get back to what
 really matters, putting solutions in the hands of people to improve their
 lives.
 
-<div class="section" id="the-email">
-
 ## The Email
 
-> <div>
-> 
-> The goal of software delivery is to minimize the lead time to business
-> impact. Everything else is detail.
-> 
-> —Dan North
-> 
-> </div>
+{% blockquote %}
+The goal of software delivery is to minimize the lead time to business
+impact. Everything else is detail.
+—Dan North
+{% endblockquote %}
 
 This is super important concept to understand. We are here to add value to the
 business so delivering impactful improvements and solutions is what is the most
@@ -47,30 +40,23 @@ good values as a team. We are integrated into the business and now that all of
 us are sitting with the business, the opportunities to add more value should
 be more evident.
 
-> <div>
-> 
-> Velocity = Speed in a direction
-> 
-> —Dan North
-> 
-> </div>
-> <div>
-> 
-> Story points are not points going toward a particular goal. We have lost
-> sight of solving business problems, agile is now about producing software
-> faster. We have strayed from the whole point.
-> 
-> —Dan North
-> 
-> </div>
-> <div>
-> 
-> Nothing we deliver is worth anything unless it delivers the businesses
-> objective.
-> 
-> —Dan North
-> 
-> </div>
+{% blockquote %}
+Velocity = Speed in a direction
+—Dan North
+{% endblockquote %}
+
+{% blockquote %}
+Story points are not points going toward a particular goal. We have lost
+sight of solving business problems, agile is now about producing software
+faster. We have strayed from the whole point.
+—Dan North
+{% endblockquote %}
+
+{% blockquote %}
+Nothing we deliver is worth anything unless it delivers the businesses
+objective.
+—Dan North
+{% endblockquote %}
 
 Agile metrics are total BS, they are worthless as far as the business is
 concerned, because it doesn’t answer the questions that the business cares
@@ -80,34 +66,27 @@ community meeting. Those are the types of metrics we should be measure using.
 Points, sprints, etc. doesn’t show the business value that we are actually
 delivering.
 
-> <div>
-> 
-> Until customers are actually using it,
-> then we are making stuff up.
-> 
-> —Richard Campbell
-> 
-> </div>
-> <div>
-> 
-> Two conflicting values, simultaneously. I will write the best software I
-> can. I will have not emotional attachment to the software that I write.
-> Transfer emotional attachment of the code to the product, the impact on
-> users. Cared less about the beauty of the code and more on the impact on
-> success and happiness of the users. Software is the means to the end.
-> As little software as needed to get there.
-> 
-> —Dan North
-> 
-> </div>
-> <div>
-> 
-> Successful software teams blur the lines between the business
-> and development.
-> 
-> —Dan North
-> 
-> </div>
+{% blockquote %}
+Until customers are actually using it,
+then we are making stuff up.
+—Richard Campbell
+{% endblockquote %}
+
+{% blockquote %}
+Two conflicting values, simultaneously. I will write the best software I
+can. I will have not emotional attachment to the software that I write.
+Transfer emotional attachment of the code to the product, the impact on
+users. Cared less about the beauty of the code and more on the impact on
+success and happiness of the users. Software is the means to the end.
+As little software as needed to get there.
+—Dan North
+{% endblockquote %}
+
+{% blockquote %}
+Successful software teams blur the lines between the business
+and development.
+—Dan North
+{% endblockquote %}
 
 So I think we should keep doing the bi-weekly planning/retrospective meeting
 that sets goals, but I think we should do away with points and I don’t think we
@@ -123,13 +102,10 @@ impact we are having. Some of these may take a complete year before coming to
 fruition, but we should be playing the long game to begin with, the short game
 will be evident in the attitudes that our customers have about us.
 
-> <div>
-> 
-> GANTT Chart = Product Backlog
-> 
-> —Dan North
-> 
-> </div>
+{% blockquote %}
+GANTT Chart = Product Backlog
+—Dan North
+{% endblockquote %}
 
 (_Borrowed from Dan North_) So think about it like surgery.  We don’t want more
 stitches more procedures, we want the surgeon to use the least invasive
@@ -146,5 +122,3 @@ people love to use and makes their day better. We have been working hard to get
 there and it is evident in the call center metrics, so lets keep doing this
 until we stop being successful or until we determine that it is no longer
 adding value, then we will evolve.
-
-</div>

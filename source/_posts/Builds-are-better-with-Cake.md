@@ -4,10 +4,8 @@ tags:
   - Orchard
   - Open Source
   - Cake
-date: 2015-10-17 20:00:00
+date: 2015-10-18 20:00:00
 ---
-
-# Builds are better with Cake
 
 As most of you know, my team has been using Orchard to build our next application.
 While we have found the majority of what Orchard has to offer great, there

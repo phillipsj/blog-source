@@ -3,10 +3,8 @@ title: CodeMash 2015
 tags:
   - CodeMash
   - Conferences
-date: 2015-01-10 19:00:00
+date: 2015-01-11 19:00:00
 ---
-
-# CodeMash 2015
 
 I was lucky enough that my company sent me to [CodeMash](http://www.codemash.org/). CodeMash is a pretty
 awesome conference in Sandusky, OH at a huge indoor water park. There

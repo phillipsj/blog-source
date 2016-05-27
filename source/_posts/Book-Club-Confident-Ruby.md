@@ -3,10 +3,8 @@ title: 'Book Club: Confident Ruby'
 tags:
   - Book Club
   - Confident Code
-date: 2014-09-21 20:00:00
+date: 2014-09-22 20:00:00
 ---
-
-# Book Club: Confident Ruby
 
 I recently started ready the book “Confident Ruby” by Avdi Grimm. I have been
 a long time listener to the Ruby Rogues and I have been interested in this book

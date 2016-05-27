@@ -5,10 +5,8 @@ tags:
   - Helpers
   - Handlebars
   - Ember-CLI
-date: 2014-11-03 19:00:00
+date: 2014-11-04 19:00:00
 ---
-
-# Helpers in EmberJS
 
 EmberJS uses Handlebars as its template engine.
 To extend it, you create what Ember calls helpers.
@@ -29,50 +27,50 @@ Getting Started:
 
 Lets create the mailto helper to start:
 
-<div class="highlight-none"><div class="highlight"><pre>$ ember g helper mailtoLink
-</pre></div>
-</div>
+{% codeblock lang:shell-script %}
+$ ember g helper mailtoLink
+{% endcodeblock %}
 
 Now navigate to the helper file and add this code.
 
-<div class="highlight-javascript"><div class="highlight"><pre><span class="kr">import</span> <span class="nx">Ember</span> <span class="nx">from</span> <span class="s1">'ember'</span><span class="p">;</span>
+{% codeblock lang:js %}
+import Ember from 'ember';
 
-<span class="kr">export</span> <span class="kd">function</span> <span class="nx">mailtoLink</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
-   <span class="kd">var</span> <span class="nx">mailTo</span> <span class="o">=</span> <span class="s1">'&lt;a href="mailto:'</span> <span class="o">+</span> <span class="nx">input</span> <span class="o">+</span> <span class="s1">'"&gt;'</span><span class="p">;</span>
-   <span class="nx">mailTo</span> <span class="o">+=</span> <span class="nx">input</span> <span class="o">+</span> <span class="s1">'&lt;/a&gt;'</span><span class="p">;</span>
-   <span class="k">return</span> <span class="k">new</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Handlebars</span><span class="p">.</span><span class="nx">SafeString</span><span class="p">(</span><span class="nx">mailTo</span><span class="p">);</span>
-<span class="p">}</span>
+export function mailtoLink(input) {
+   var mailTo = '<a href="mailto:' + input + '">';
+   mailTo += input + '</a>';
+   return new Ember.Handlebars.SafeString(mailTo);
+}
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Handlebars</span><span class="p">.</span><span class="nx">makeBoundHelper</span><span class="p">(</span><span class="nx">mailtoLink</span><span class="p">);</span>
-</pre></div>
-</div>
+export default Ember.Handlebars.makeBoundHelper(mailtoLink);
+{% endcodeblock %}
 
 Now create the telLink helper to start:
 
-<div class="highlight-none"><div class="highlight"><pre>$ ember g helper telLink
-</pre></div>
-</div>
+{% codeblock lang:shell-script %}
+$ ember g helper telLink
+{% endcodeblock %}
 
 Now navigate to the helper file and add this code.
 
-<div class="highlight-javascript"><div class="highlight"><pre><span class="kr">import</span> <span class="nx">Ember</span> <span class="nx">from</span> <span class="s1">'ember'</span><span class="p">;</span>
+{% codeblock lang:js %}
+import Ember from 'ember';
 
-<span class="kr">export</span> <span class="kd">function</span> <span class="nx">telLink</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">tel</span> <span class="o">=</span> <span class="s1">'&lt;a href="tel:'</span> <span class="o">+</span> <span class="nx">input</span> <span class="o">+</span> <span class="s1">'"&gt;'</span><span class="p">;</span>
-  <span class="nx">tel</span> <span class="o">+=</span> <span class="nx">input</span> <span class="o">+</span> <span class="s1">'&lt;/a&gt;'</span><span class="p">;</span>
-  <span class="k">return</span> <span class="k">new</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Handlebars</span><span class="p">.</span><span class="nx">SafeString</span><span class="p">(</span><span class="nx">tel</span><span class="p">);</span>
-<span class="p">}</span>
+export function telLink(input) {
+  var tel = '<a href="tel:' + input + '">';
+  tel += input + '</a>';
+  return new Ember.Handlebars.SafeString(tel);
+}
 
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Handlebars</span><span class="p">.</span><span class="nx">makeBoundHelper</span><span class="p">(</span><span class="nx">telLink</span><span class="p">);</span>
-</pre></div>
-</div>
+export default Ember.Handlebars.makeBoundHelper(telLink);
+{% endcodeblock %}
 
 Now to use these you can just call these in your templates like so:
 
-<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;p&gt;</span>Email: {{mailto-link email}}<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;</span>Phone: {{tel-link phone}}<span class="nt">&lt;/p&gt;</span>
-</pre></div>
-</div>
+{% codeblock lang:html%}
+<p>Email: {{mailto-link email}}</p>
+<p>Phone: {{tel-link phone}}</p>
+{% endcodeblock %}
 
 Ember makes lots of things really easy, but sometimes it not very clear how to
 do others. Hope you find this helpful.

@@ -3,10 +3,8 @@ title: Cake.XdtTransform
 tags:
   - Open Source
   - Cake
-date: 2015-10-20 20:00:00
+date: 2015-10-21 20:00:00
 ---
-
-# Cake.XdtTransform
 
 As part of moving our Orchard build over to Cake, I was trying to find a good
 way to do the config transfomrs.  Cake offers a pretty good XML transform methods,

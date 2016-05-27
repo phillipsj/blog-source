@@ -3,10 +3,8 @@ title: Getting to know Dojo
 tags:
   - Dojo
   - JavaScript
-date: 2014-04-22 20:00:00
+date: 2014-04-23 20:00:00
 ---
-
-# Getting to know Dojo
 
 I have been wanting to dive into Dojo for sometime, but I have always let the
 new fancy frameworks lure me away. I have a draft post about Angular gueued up

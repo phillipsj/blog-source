@@ -3,10 +3,8 @@ title: Ember Frustration
 tags:
   - EmberJS
   - Ember
-date: 2014-11-04 19:00:00
+date: 2014-11-05 19:00:00
 ---
-
-# Ember Frustration
 
 Since yesterday’s post I have spent two full days of frustation
 while working on the Ember app that I am building. I am finding

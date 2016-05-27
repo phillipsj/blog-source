@@ -3,10 +3,8 @@ title: First Orchard Pull Request
 tags:
   - Orchard
   - Open Source
-date: 2015-09-08 20:00:00
+date: 2015-09-09 20:00:00
 ---
-
-# First Orchard Pull Request
 
 Lately my team and I have been working with [Orchard](http://www.orchardproject.net/) CMS. We picked Orchard
 because we are .NET developers and Orchard provided such a great framework to

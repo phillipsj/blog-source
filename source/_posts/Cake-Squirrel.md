@@ -3,10 +3,8 @@ title: Cake.Squirrel
 tags:
   - Open Source
   - Cake
-date: 2015-12-03 19:00:00
+date: 2015-12-04 19:00:00
 ---
-
-# Cake.Squirrel
 
 Just published a new package called [Cake.Squirrel](https://www.nuget.org/packages/Cake.Squirrel/). It integrates [Squirrel.Windows](https://github.com/Squirrel/Squirrel.Windows)
 into the Cake pipeline so you can now create your Squirrel package using Cake.

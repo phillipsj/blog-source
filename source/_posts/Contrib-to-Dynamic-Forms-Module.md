@@ -3,10 +3,8 @@ title: Contrib to Dynamic Forms Module
 tags:
   - Orchard
   - Dynamic Forms
-date: 2015-09-30 20:00:00
+date: 2015-10-01 20:00:00
 ---
-
-# Contrib to Dynamic Forms Module
 
 Orchard CMS has this really cool module called Dynamic Forms.  It allows users
 to create forms that can create submissions, bind to content types, or tie into

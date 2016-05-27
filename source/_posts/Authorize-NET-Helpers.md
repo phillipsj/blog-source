@@ -4,10 +4,8 @@ tags:
   - Authorize
   - .NET
   - NuGet
-date: 2015-03-20 20:00:00
+date: 2015-03-21 20:00:00
 ---
-
-# Authorize .NET Helpers
 
 So I made this [post](http://www.phillipsj.net/blog/html/2015/02/26/authorize_net_dpm_helper.html) a couple of weeks ago about how to wrap the Authorize.NET SDK into
 a better form to make it easier to integrate with ASP .NET MVC. So I decided to take it the

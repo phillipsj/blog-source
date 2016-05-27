@@ -2,10 +2,8 @@
 title: Attended LOPSA Meetup
 tags:
   - Meetups
-date: 2014-03-16 20:00:00
+date: 2014-03-17 20:00:00
 ---
-
-# Attended LOPSA Meetup
 
 I attended my [local](http://lopsaetenn.org/) [LOPSA](https://lopsa.org/) meetup. The presentation for the night was about “Software-Defined Networking”.
 It was presented by Andy Cowell of the Scripps Network which owns HGTV and FoodNetwork to name a couple. With I

@@ -3,12 +3,10 @@ title: Copyright and Licensing
 tags:
   - Copyright
   - Licensing
-date: 2014-05-28 20:00:00
+date: 2014-05-29 20:00:00
 ---
 
-# Copyright and Licensing
-
-[<span class="problematic" id="id2">*</span>](#id1)Disclaimer:  I am not a lawyer.
+\*Disclaimer:  I am not a lawyer.
 
 Copyright and licensing are difficult to understand, but there are
 resources on the web that will at least ease the burden of understading.

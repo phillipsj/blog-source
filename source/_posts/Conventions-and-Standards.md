@@ -1,10 +1,8 @@
 ---
 title: Conventions and Standards
 tags: []
-date: 2014-05-13 20:00:00
+date: 2014-05-14 20:00:00
 ---
-
-# Conventions and Standards
 
 **TL;DR; You should have a good reason not to follow conventions or standards.**
 

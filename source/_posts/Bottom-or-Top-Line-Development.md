@@ -3,10 +3,8 @@ title: Bottom or Top Line Development
 tags:
   - Agile
   - Shipping
-date: 2015-07-27 20:00:00
+date: 2015-07-28 20:00:00
 ---
-
-# Bottom or Top Line Development
 
 On my journey into management, I have picked up a copy of [Behind Closed Doors](https://pragprog.com/book/rdbcd/behind-closed-doors)
 from the [Pragmatic Bookshelf](https://pragprog.com). I love their books and so far this one is
