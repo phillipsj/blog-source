@@ -28,4 +28,4 @@ the book. I was unable to attend the first offering, but plan to take it
 if offered again. It is a tremendous value that is being offered, and I
 hope that anyone you give it a try finds it just as helpful as I have.
 
-Later,
+Later

@@ -6,7 +6,7 @@ date: 2014-11-28 19:00:00
 ---
 
 This is going to be long post, probably a ramble, about why I settled on Ember as the new age
-MV* framework I wanted to learn.
+MV\* framework I wanted to learn.
 
 When I first go started doing development, the ecosystem that I was working in was ASP .NET Web Forms. I
 learned to do all client-side interaction on the server and I always found myself struggling. Then

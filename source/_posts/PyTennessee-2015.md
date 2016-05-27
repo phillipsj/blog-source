@@ -42,10 +42,10 @@ informative and a great overview of the basics of each library and how you can
 use them to analyze large amounts of data. Not a deep dive, but great for me, as
 I like a good place to get started. Here is her list from what I remember.
 
-*   [NLTK](http://www.nltk.org/)
-*   [SciKit](http://scikit-learn.org/stable/)
-*   [Pandas](http://pandas.pydata.org/)
-*   [ggplot](http://ggplot.yhathq.com/)
+* [NLTK](http://www.nltk.org/)
+* [SciKit](http://scikit-learn.org/stable/)
+* [Pandas](http://pandas.pydata.org/)
+* [ggplot](http://ggplot.yhathq.com/)
 
 ## Zen and the Art of Python
 
