@@ -3,10 +3,8 @@ title: Lots of dislike for Dojo
 tags:
   - Dojo
   - JavaScript
-date: 2014-05-15 20:00:00
+date: 2014-05-16 20:00:00
 ---
-
-# Lots of dislike for Dojo
 
 I have noticed recently that lots of people seem to really dislike Dojo. I have no clue as to why. Dojo was an early
 adopter of a lot of new techniques and technologies. I would agree Dojo has a steep learning curve and it is a large

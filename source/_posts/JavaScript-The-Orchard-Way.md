@@ -4,10 +4,8 @@ tags:
   - Orchard
   - Open Source
   - ReactJS
-date: 2015-12-17 19:00:00
+date: 2015-12-18 19:00:00
 ---
-
-# JavaScript: The Orchard Way
 
 So I have been attending the [Orchard community](http://www.orchardproject.net/discussions) meetings since we started to
 use Orchard for our current project. Orchard is a great system that is very

@@ -4,10 +4,8 @@ tags:
   - Surface
   - Microsoft
   - Hardware
-date: 2015-05-27 20:00:00
+date: 2015-05-28 20:00:00
 ---
-
-# Two weeks with the Surface 3
 
 I found myself needing a new computer and decided that I wanted an ultra portable
 device. After looking around and considering price, I decided that I wanted to

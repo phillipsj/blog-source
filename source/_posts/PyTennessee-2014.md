@@ -3,10 +3,8 @@ title: PyTennessee 2014
 tags:
   - Python
   - Conference
-date: 2014-03-02 19:00:00
+date: 2014-03-03 19:00:00
 ---
-
-# PyTennessee 2014
 
 I attended PyTennessee a couple of weeks ago.  This is the fisrt one
 of what I hope is many.  I took some photos of the talks that I attended.

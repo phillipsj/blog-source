@@ -3,10 +3,8 @@ title: Shinken Day One
 tags:
   - Monitoring
   - Python
-date: 2014-09-07 20:00:00
+date: 2014-09-08 20:00:00
 ---
-
-# Shinken Day One
 
 I have been investigating monitoring tools to determine which
 one would best fit our skillsets and environment. While I was
@@ -25,24 +23,24 @@ domain name with the username. Below is the packages I had to install
 when using Ubuntu 14.04\. I had monitoring configured on Shinken server like
 in the 2nd tutorial.
 
-<div class="highlight-none"><div class="highlight"><pre>$ apt-get install sysstat ntp python-ldap
-</pre></div>
-</div>
+{% codeblock lang:shell-script %}
+$ apt-get install sysstat ntp python-ldap
+{% endcodeblock %}
 
 Then at the end of the second tutorial I chose to do active directory
 and the sticking point is highlighted below. Make sure to include the
 domain in the username.
 
-<div class="highlight-none"><div class="highlight"><pre> define module {
+{% codeblock lang:shell-script %}
+ define module {
      module_name ActiveDir_UI
      module_type ad_webui
      ldap_uri ldaps://adserver
-<span class="hll">     username user@domain
-</span>     password password
+     username user@domain
+     password password
      basedn DC=google,DC=com
      # For mode you can switch between ad (active dir)
      # and openldap
      mode    ad
  }
-</pre></div>
-</div>
+{% endcodeblock %}

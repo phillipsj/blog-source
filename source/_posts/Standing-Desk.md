@@ -2,10 +2,8 @@
 title: Standing Desk
 tags:
   - Environment
-date: 2014-07-19 20:00:00
+date: 2014-07-20 20:00:00
 ---
-
-# Standing Desk
 
 I have been wanting to try a standing desk for little over a year. I have been hesitant to make the commitment, but I have just completed three days with a standing desk and I will say it has been awesome. The first day I stood way too much, but then the last two days I feel I mixed it up just enough that I was not as tired and felt way better.
 

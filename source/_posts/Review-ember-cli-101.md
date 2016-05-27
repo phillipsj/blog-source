@@ -4,10 +4,8 @@ tags:
   - EmberJS
   - Ember-CLI
   - Books
-date: 2014-11-21 19:00:00
+date: 2014-11-22 19:00:00
 ---
-
-# Review: ember-cli 101
 
 I have posted a couple of times about my frustration using
 Ember. I was about two weeks in using EmberJS when I finally

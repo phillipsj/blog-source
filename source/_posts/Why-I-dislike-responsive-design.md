@@ -4,10 +4,8 @@ tags:
   - Responsive
   - Design
   - Mobile
-date: 2014-05-14 20:00:00
+date: 2014-05-15 20:00:00
 ---
-
-# Why I dislike responsive design
 
 Lately I have been working on a project that uses responsive design. Initial it sounded like a great opportunity
 as I have not had the privilege to work on a responsive website that is GIS based. While it has in fact been a great

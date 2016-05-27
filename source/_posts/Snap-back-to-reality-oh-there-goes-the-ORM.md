@@ -4,10 +4,8 @@ tags:
   - ORM
   - Dapper
   - Reality
-date: 2015-04-08 20:00:00
+date: 2015-04-09 20:00:00
 ---
-
-# Snap back to reality, oh, there goes the ORM
 
 I find myself going down this rabbit hole every six months it seems. I get
 lured in by the promises of an ORM. First it was [Castle’s Active Record](http://www.castleproject.org/projects/activerecord/), then

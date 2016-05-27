@@ -2,10 +2,8 @@
 title: Moving into Management
 tags:
   - Management
-date: 2015-06-13 20:00:00
+date: 2015-06-14 20:00:00
 ---
-
-# Moving into Management
 
 I have finally made the move into management. As of this week I am now a manager
 of a small group. I still get to do development, but I get to help my teammates

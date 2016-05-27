@@ -2,10 +2,8 @@
 title: Using Pods in Ember
 tags:
   - Ember
-date: 2015-01-06 19:00:00
+date: 2015-01-07 19:00:00
 ---
-
-# Using Pods in Ember
 
 When I first started using Ember-CLI I did not pods. Recently
 I started creating all new code usings pods. It was really weird

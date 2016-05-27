@@ -3,10 +3,8 @@ title: Web Compiler with a side of Cake
 tags:
   - Open Source
   - Cake
-date: 2015-11-24 19:00:00
+date: 2015-11-25 19:00:00
 ---
-
-# Web Compiler with a side of Cake
 
 My team has been using [React](http://facebook.github.io/react/) to create any front-end components that need
 to be interactive. So far it has been a pleasant experience. We started using
@@ -24,14 +22,14 @@ time to see if we can get it to work with Cake.
 Configuring Web Compiler for use with Cake was extremely easy. Here are the steps
 needed to have Web Compiler working as part of your Cake builds.
 
-1.  Edit your packages.config for Cake, you also need Cake.MSBuildTask.
-<script src="https://gist.github.com/phillipsj/d5d236d048341b4c37e0.js">&amp;amp;amp;nbsp;</script>
+1. Edit your packages.config for Cake, you also need Cake.MSBuildTask.
+{% gist d5d236d048341b4c37e0 packages.config %}
 
-1.  Now add the Web Compiler as an addin in your build.cake file.
-<script src="https://gist.github.com/phillipsj/5b6e22c7eddccbd9c90d.js">&amp;amp;amp;nbsp;</script>
+2. Now add the Web Compiler as an addin in your build.cake file.
+{% gist 5b6e22c7eddccbd9c90d Build.cale %}
 
-1.  Now create your JSX compile tasks, now use the GetFiles to find all compilerconfig.json files.
-<script src="https://gist.github.com/phillipsj/75848d11d8d4a4ab091f.js">&amp;amp;amp;nbsp;</script>
+3. Now create your JSX compile tasks, now use the GetFiles to find all compilerconfig.json files.
+{% gist 75848d11d8d4a4ab091f Build.cs %}
 
 It is that easy. I may, in the future, remove the need for the MSBuildTask runner.
 

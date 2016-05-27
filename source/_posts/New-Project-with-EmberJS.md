@@ -3,10 +3,8 @@ title: New Project with EmberJS
 tags:
   - EmberJS
   - Ember-CLI
-date: 2014-11-02 19:00:00
+date: 2014-11-03 19:00:00
 ---
-
-# New Project with EmberJS
 
 We are starting to embark on changing a few
 applications at work to be more modern and

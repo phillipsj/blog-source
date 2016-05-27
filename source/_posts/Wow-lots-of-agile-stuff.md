@@ -1,18 +1,14 @@
 ---
 title: 'Wow, lots of agile stuff'
 tags: []
-date: 2015-05-12 20:00:00
+date: 2015-05-13 20:00:00
 ---
-
-# Wow, lots of agile stuff
 
 A couple of weeks after my last post about Software Faster, there seems to be
 lots of these posts popping up in my reader about agile. We may have reached
 this critical point in the agile movement were we are starting to realize that
 in the name of being agile we are being rigid. Here are the recent posts that
 jumped out at me.
-
-<div class="section" id="agile-results">
 
 ## Agile Results
 
@@ -26,9 +22,6 @@ time box makes it clear what we are trying to do and if we got it done. I have
 purchased the [book](http://gettingresults.com/wiki/Main_Page) and will do a full review shortly, but it looks like it
 is going to provide some additional techniques to tweak what we are already
 doing.
-
-</div>
-<div class="section" id="the-failure-of-agile">
 
 ## The Failure of Agile
 
@@ -50,5 +43,3 @@ adaptive and responsive to the business we support. Our cusotmers are our focus
 and we try our best to deliver the technical solutions as we need them.
 Hopefully everything from the above two blog posts can be incorporated into
 our approaches to aiding our customers.
-
-</div>

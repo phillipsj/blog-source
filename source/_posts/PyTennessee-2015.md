@@ -4,10 +4,8 @@ tags:
   - PyTennessee
   - Python
   - Conference
-date: 2015-02-08 19:00:00
+date: 2015-02-09 19:00:00
 ---
-
-# PyTennessee 2015
 
 The second ever PyTennessee just wrapped up and I really enjoyed myself again.
 It is nice having a great conference to attend in Tennessee. The organizers
@@ -15,8 +13,6 @@ topped themselves again this year. For the price this conferece is packed with
 great sessions and as a bonus the food was awesome, provided by [sifted](http://www.siftednashville.co/). I am
 just going to run through a couple of my favorites, but I really enjoyed all
 that I could attend.
-
-<div class="section" id="morning-keynote-on-saturday">
 
 ## Morning Keynote on Saturday
 
@@ -30,9 +26,6 @@ The other cool part was just the amount of hardware used for the Nature article,
 40 cpu cores and 0.5 TB RAM, just astonishing. From a GIS perspective, I think
 he is on to something.
 
-</div>
-<div class="section" id="marketing-for-developers">
-
 ## Marketing for Developers
 
 [Craig Kerstiens](http://www.craigkerstiens.com/) did a great job of discussing a road map for developers to
@@ -41,9 +34,6 @@ from OSS to blogging to presentations.He shared how he tested presentations
 and shared other tidbits of knowledge like when to post to your blog.If I can
 find a copy of his slide deck or a video I will post it up. Keep a look out for
 it as it may show up again.
-
-</div>
-<div class="section" id="analyzing-data-with-python">
 
 ## Analyzing Data with Python
 
@@ -56,8 +46,6 @@ I like a good place to get started. Here is her list from what I remember.
 *   [SciKit](http://scikit-learn.org/stable/)
 *   [Pandas](http://pandas.pydata.org/)
 *   [ggplot](http://ggplot.yhathq.com/)
-</div>
-<div class="section" id="zen-and-the-art-of-python">
 
 ## Zen and the Art of Python
 
@@ -67,17 +55,15 @@ applying the principles outlined and why those are worthing of being part of
 the core of Python. If you have know clue what I am talking about then you need
 to open a terminal and do the following:
 
-> <div><div class="highlight-none"><div class="highlight"><pre>$ python
-> </pre></div>
-> </div>
-> </div>
+{% codeblock lang:shell-script %}
+$ python
+{% endcodeblock %}
 
 Now that you have a REPL:
 
-> <div><div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">this</span>
-> </pre></div>
-> </div>
-> </div>
+{% codeblock lang:shell-script %}
+$ import this
+{% endcodeblock %}
 
 This is what is known as “The Zen of Python”, built right in and practical for
 any language.

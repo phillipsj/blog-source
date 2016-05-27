@@ -2,10 +2,8 @@
 title: Why I picked Ember
 tags:
   - Ember
-date: 2014-11-27 19:00:00
+date: 2014-11-28 19:00:00
 ---
-
-# Why I picked Ember
 
 This is going to be long post, probably a ramble, about why I settled on Ember as the new age
 MV* framework I wanted to learn.

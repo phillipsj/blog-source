@@ -5,10 +5,8 @@ tags:
   - Blog
   - Cloud9
   - Static
-date: 2015-04-11 20:00:00
+date: 2015-04-12 20:00:00
 ---
-
-# Static Blog Generators: I am on Cloud9
 
 I am a big fan of using a static blog generator. I don’t have to worry, about
 security, database, or hosting. This blog is powered by [Tinkerer](http://tinkerer.me/) which is an

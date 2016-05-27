@@ -2,10 +2,8 @@
 title: New Job
 tags:
   - Job
-date: 2014-06-23 20:00:00
+date: 2014-06-24 20:00:00
 ---
-
-# New Job
 
 I started a new job a few weeks ago. I now have a title of Software
 Engineer which I feel is more expressive of what I feel that I do. The

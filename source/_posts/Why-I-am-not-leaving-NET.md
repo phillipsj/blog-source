@@ -2,10 +2,8 @@
 title: Why I am not leaving .NET
 tags:
   - .NET
-date: 2015-01-16 19:00:00
+date: 2015-01-17 19:00:00
 ---
-
-# Why I am not leaving .NET
 
 This is going to be a long read, but something has just gotten me
 going today about making this post. I have actively been doing

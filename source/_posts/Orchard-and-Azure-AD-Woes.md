@@ -5,10 +5,8 @@ tags:
   - Azure
   - Owin
   - Open Source
-date: 2015-10-07 20:00:00
+date: 2015-10-08 20:00:00
 ---
-
-# Orchard and Azure AD Woes!
 
 So my team and I have been using Orchard CMS to build the next version of our
 product. Since we have been using Azure AD for authentication for our applicaions
@@ -31,7 +29,7 @@ was greated with the following error:
 having the user profile loaded for the current thread’s user context, which may
 be the case when the thread is impersonating.**
 
-<script src="https://gist.github.com/phillipsj/ffa9fbdafad35f46aaf8.js">&amp;amp;amp;nbsp;</script>
+{% gist ffa9fbdafad35f46aaf8 DataProtectionError.txt %}
 
 I quickly started googling and found several suggestions. I tried several different
 approaches, until I pulled out [dotPeek](https://www.jetbrains.com/decompiler/) and dug a little through
@@ -39,7 +37,7 @@ _Microsoft.Owin.Security_ and noticed that I needed a different IDataProtectionP
 that doesn’t use DPAPI. I finally got to a [this](http://stackoverflow.com/questions/23455579/generating-reset-password-token-does-not-work-in-azure-website) on StackOverflow.  The suggestion
 there was to implement the following:
 
-<script src="https://gist.github.com/phillipsj/aa374e21ab5bc9b0ea54.js">&amp;amp;amp;nbsp;</script>
+{% gist aa374e21ab5bc9b0ea54 MachineKeyDataProtector.cs %}
 
 Now that I had this implementation, I tried several of the other posts on StackOverflow
 trying to use Autofac to inject the dependency in, however it was working.
@@ -47,20 +45,20 @@ trying to use Autofac to inject the dependency in, however it was working.
 Again, I turned to dotPeek and was taking a look at what was going on with this
 method:
 
-<div class="highlight-python"><div class="highlight"><pre><span class="n">app</span><span class="o">.</span><span class="n">GetDataProtectionProvider</span><span class="p">()</span>
-</pre></div>
-</div>
+{% codeblock %}
+app.GetDataProtectionProvider()
+{% endcodeblock %}
 
 While looking at the method, I noticed this other extension method.:
 
-<div class="highlight-python"><div class="highlight"><pre>app.SetDataProtectionProvider(IDataProtectionProvider provider)
-</pre></div>
-</div>
+{% codeblock %}
+app.SetDataProtectionProvider(IDataProtectionProvider provider)
+{% endcodeblock %}
 
 So I added the following to my OwinMiddleware class in my Orchard Module
 and **IT WORKED!**
 
-<script src="https://gist.github.com/phillipsj/b4b6ba3367b48bb37cc6.js">&amp;amp;amp;nbsp;</script>
+{% gist b4b6ba3367b48bb37cc6 OwinMiddlware.cs %}
 
 This has been a two day issue that we have beent trying to determine what the cause.
 I will be able to sleep soundly tonight.

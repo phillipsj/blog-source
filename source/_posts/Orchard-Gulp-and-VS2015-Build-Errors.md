@@ -4,10 +4,8 @@ tags:
   - Orchard
   - Gulp
   - VS2015
-date: 2015-09-28 20:00:00
+date: 2015-09-29 20:00:00
 ---
-
-# Orchard, Gulp, and VS2015 Build Errors
 
 Recently, my team and I, have started using Visual Studio 2015 while working
 on our Orchard project. Orchard has started using Gulp to manage building some
@@ -25,7 +23,7 @@ Layouts and Dynamic Forms modules project file to exclude the node_modules
 folder.  This is quick and easy by adding the ExlcudeFoldersFromDeployment tag
 in the first property group of each project file.
 
-<script src="https://gist.github.com/phillipsj/ec49732c325b7de55d19.js">&amp;amp;amp;nbsp;</script>
+{% gist ec49732c325b7de55d19 ExcludeExample.xml %}
 
 Once that has been added to those project files, publishing now works. Also with
 this change my GIT deployments to an Azure Website magically started working
