@@ -4,6 +4,7 @@ tags:
   - Python
   - Postgres
 date: 2014-03-05 19:00:00
+alias: blog/html/2014/03/05/repository_pattern_with_postgres_py.html
 ---
 
 At [PyTennessee](http://www.pytennessee.org/) I attended a presentation about ‘Postgres.py’_.  It is a nice simple

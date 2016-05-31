@@ -4,6 +4,7 @@ tags:
   - Python
   - Conference
 date: 2014-03-03 19:00:00
+alias: blog/html/2014/03/03/pytennessee_2014.html
 ---
 
 I attended PyTennessee a couple of weeks ago.  This is the fisrt one

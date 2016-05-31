@@ -5,6 +5,7 @@ tags:
   - Craftsmanship
   - Shipping
 date: 2015-04-20 20:00:00
+alias: blog/html/2015/04/20/inspiration_software_faster.html
 ---
 
 I typically listen to podcasts while I mow my yard. I find mowing relaxing and

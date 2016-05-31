@@ -5,6 +5,7 @@ tags:
   - Dapper
   - ORM
 date: 2015-02-19 19:00:00
+alias: blog/html/2015/02/19/dapperextensions_mapper_to_dapper.html
 ---
 
 I have used several of the differnet Object Relation Mappers (ORMs) out there

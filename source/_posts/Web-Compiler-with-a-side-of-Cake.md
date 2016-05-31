@@ -4,6 +4,7 @@ tags:
   - Open Source
   - Cake
 date: 2015-11-25 19:00:00
+alias: blog/html/2015/11/25/web_compiler_with_a_side_of_cake.html
 ---
 
 My team has been using [React](http://facebook.github.io/react/) to create any front-end components that need

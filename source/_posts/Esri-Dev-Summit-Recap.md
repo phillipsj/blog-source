@@ -5,6 +5,7 @@ tags:
   - Presentations
   - Python
 date: 2014-03-17 20:00:00
+alias: blog/html/2014/03/17/esri_dev_summit_recap.html
 ---
 
 I made it back from the Esri Dev Summit. Dodge ball did not work out so

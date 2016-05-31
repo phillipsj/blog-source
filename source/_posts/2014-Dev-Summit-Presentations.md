@@ -5,6 +5,7 @@ tags:
   - Presentations
   - Python
 date: 2014-03-26 20:00:00
+alias: blog/html/2014/03/26/2014_dev_summit_presentations.html
 ---
 
 Updated my presentations page to inlude the titles and links to the

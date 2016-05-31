@@ -3,6 +3,7 @@ title: Attended LOPSA Meetup
 tags:
   - Meetups
 date: 2014-03-17 20:00:00
+alias: blog/html/2014/03/17/attended_lopsa_meetup.html
 ---
 
 I attended my [local](http://lopsaetenn.org/) [LOPSA](https://lopsa.org/) meetup. The presentation for the night was about “Software-Defined Networking”.

@@ -4,6 +4,7 @@ tags:
   - Orchard
   - Open Source
 date: 2015-09-11 20:00:00
+alias: blog/html/2015/09/11/orchard_layouts_with_json_net.html
 ---
 
 I have been developing a custom module that uses the Dynamic Forms module to

@@ -3,6 +3,7 @@ title: Why I picked Ember
 tags:
   - Ember
 date: 2014-11-28 19:00:00
+alias: blog/html/2014/11/28/why_i_picked_ember.html
 ---
 
 This is going to be long post, probably a ramble, about why I settled on Ember as the new age

@@ -5,6 +5,7 @@ tags:
   - Microsoft
   - Hardware
 date: 2015-05-28 20:00:00
+alias: blog/html/2015/05/28/two_weeks_with_the_surface_3.html
 ---
 
 I found myself needing a new computer and decided that I wanted an ultra portable

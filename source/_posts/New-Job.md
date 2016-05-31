@@ -3,6 +3,7 @@ title: New Job
 tags:
   - Job
 date: 2014-06-24 20:00:00
+alias: blog/html/2014/06/24/new_job.html
 ---
 
 I started a new job a few weeks ago. I now have a title of Software

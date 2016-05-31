@@ -3,6 +3,7 @@ title: Moving into Management
 tags:
   - Management
 date: 2015-06-14 20:00:00
+alias: blog/html/2015/06/14/moving_into_management.html
 ---
 
 I have finally made the move into management. As of this week I am now a manager

@@ -5,6 +5,7 @@ tags:
   - Open Source
   - ReactJS
 date: 2015-12-18 19:00:00
+alias: blog/html/2015/12/18/javascript_the_orchard_way.html
 ---
 
 So I have been attending the [Orchard community](http://www.orchardproject.net/discussions) meetings since we started to

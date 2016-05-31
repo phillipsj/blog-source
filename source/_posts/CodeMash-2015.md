@@ -4,6 +4,7 @@ tags:
   - CodeMash
   - Conferences
 date: 2015-01-11 19:00:00
+alias: blog/html/2015/01/11/codemash_2015.html
 ---
 
 I was lucky enough that my company sent me to [CodeMash](http://www.codemash.org/). CodeMash is a pretty

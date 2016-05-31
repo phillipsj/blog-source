@@ -5,6 +5,7 @@ tags:
   - Dapper
   - Reality
 date: 2015-04-09 20:00:00
+alias: blog/html/2015/04/09/snap_back_to_reality_oh_there_goes_the_orm.html
 ---
 
 I find myself going down this rabbit hole every six months it seems. I get

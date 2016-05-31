@@ -3,6 +3,7 @@ title: Now using Tinkerer
 tags:
   - Technology
 date: 2014-02-23 19:00:00
+alias: blog/html/2014/02/23/now_using_tinkerer.html
 ---
 
 I have finally moved my blog over from Blogger to using [Tinkerer](http://tinkerer.me/) with hosting on Github Pages.

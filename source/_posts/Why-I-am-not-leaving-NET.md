@@ -3,6 +3,7 @@ title: Why I am not leaving .NET
 tags:
   - .NET
 date: 2015-01-17 19:00:00
+alias: blog/html/2015/01/17/why_i_am_not_leaving_net.html
 ---
 
 This is going to be a long read, but something has just gotten me

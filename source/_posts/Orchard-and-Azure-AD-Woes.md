@@ -6,6 +6,7 @@ tags:
   - Owin
   - Open Source
 date: 2015-10-08 20:00:00
+alias: blog/html/2015/10/08/orchard_and_azure_ad_woes.html
 ---
 
 So my team and I have been using Orchard CMS to build the next version of our

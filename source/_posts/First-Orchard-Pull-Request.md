@@ -4,6 +4,7 @@ tags:
   - Orchard
   - Open Source
 date: 2015-09-09 20:00:00
+alias: blog/html/2015/09/09/first_orchard_pull_request.html
 ---
 
 Lately my team and I have been working with [Orchard](http://www.orchardproject.net/) CMS. We picked Orchard

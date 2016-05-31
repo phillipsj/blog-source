@@ -4,6 +4,7 @@ tags:
   - Agile
   - Shipping
 date: 2015-07-28 20:00:00
+alias: blog/html/2015/07/28/bottom_or_top_line_development.html
 ---
 
 On my journey into management, I have picked up a copy of [Behind Closed Doors](https://pragprog.com/book/rdbcd/behind-closed-doors)

@@ -2,6 +2,7 @@
 title: 'Wow, lots of agile stuff'
 tags: []
 date: 2015-05-13 20:00:00
+alias: blog/html/2015/05/13/wow_lots_of_agile_stuff.html
 ---
 
 A couple of weeks after my last post about Software Faster, there seems to be

@@ -5,6 +5,7 @@ tags:
   - OSS
   - Node
 date: 2016-05-13 20:00:00
+alias: blog/html/2016/05/13/fun_with_electron.html
 ---
 
 So I have had the privilege to get to learn a little about [Electron](http://electron.atom.io/). My team

@@ -4,6 +4,7 @@ tags:
   - Orchard
   - Dynamic Forms
 date: 2015-10-01 20:00:00
+alias: blog/html/2015/10/01/contrib_to_dynamic_forms_module.html
 ---
 
 Orchard CMS has this really cool module called Dynamic Forms.  It allows users

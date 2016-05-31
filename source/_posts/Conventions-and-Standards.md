@@ -2,6 +2,7 @@
 title: Conventions and Standards
 tags: []
 date: 2014-05-14 20:00:00
+alias: blog/html/2014/05/14/conventions_and_standards.html
 ---
 
 **TL;DR; You should have a good reason not to follow conventions or standards.**

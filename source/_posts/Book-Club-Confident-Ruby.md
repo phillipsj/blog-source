@@ -4,6 +4,7 @@ tags:
   - Book Club
   - Confident Code
 date: 2014-09-22 20:00:00
+alias: blog/html/2014/09/22/book_club_confident_ruby.html
 ---
 
 I recently started ready the book “Confident Ruby” by Avdi Grimm. I have been

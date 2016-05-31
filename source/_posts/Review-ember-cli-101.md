@@ -5,6 +5,7 @@ tags:
   - Ember-CLI
   - Books
 date: 2014-11-22 19:00:00
+alias: blog/html/2014/11/22/review_ember_cli_101.html
 ---
 
 I have posted a couple of times about my frustration using

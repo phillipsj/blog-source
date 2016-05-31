@@ -4,6 +4,7 @@ tags:
   - Dojo
   - JavaScript
 date: 2014-05-16 20:00:00
+alias: blog/html/2014/05/16/lots_of_dislike_for_dojo.html
 ---
 
 I have noticed recently that lots of people seem to really dislike Dojo. I have no clue as to why. Dojo was an early

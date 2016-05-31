@@ -5,6 +5,7 @@ tags:
   - Design
   - Mobile
 date: 2014-05-15 20:00:00
+alias: blog/html/2014/05/15/why_i_dislike_responsive_design.html
 ---
 
 Lately I have been working on a project that uses responsive design. Initial it sounded like a great opportunity

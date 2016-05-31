@@ -5,6 +5,7 @@ tags:
   - Gulp
   - VS2015
 date: 2015-09-29 20:00:00
+alias: blog/html/2015/09/29/orchard_gulp_and_vs2015_build_errors.html
 ---
 
 Recently, my team and I, have started using Visual Studio 2015 while working

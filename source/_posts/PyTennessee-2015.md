@@ -5,6 +5,7 @@ tags:
   - Python
   - Conference
 date: 2015-02-09 19:00:00
+alias: blog/html/2015/02/09/pytennessee_2015.html
 ---
 
 The second ever PyTennessee just wrapped up and I really enjoyed myself again.

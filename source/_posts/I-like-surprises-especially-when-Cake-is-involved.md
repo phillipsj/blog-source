@@ -4,6 +4,7 @@ tags:
   - Open Source
   - Cake
 date: 2015-11-30 19:00:00
+alias: blog/html/2015/11/30/i_like_surprises_especially_when_cake_is_involved.html
 ---
 
 So I was working today to consume a Cake addin that isn’t fully baked. It is

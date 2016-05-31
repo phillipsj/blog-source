@@ -4,6 +4,7 @@ tags:
   - EmberJS
   - Ember
 date: 2014-11-05 19:00:00
+alias: blog/html/2014/11/05/ember_frustration.html
 ---
 
 Since yesterday’s post I have spent two full days of frustation

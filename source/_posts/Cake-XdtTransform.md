@@ -4,6 +4,7 @@ tags:
   - Open Source
   - Cake
 date: 2015-10-21 20:00:00
+alias: blog/html/2015/10/21/cake_xdttransform.html
 ---
 
 As part of moving our Orchard build over to Cake, I was trying to find a good

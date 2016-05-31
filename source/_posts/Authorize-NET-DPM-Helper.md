@@ -4,6 +4,7 @@ tags:
   - ASP .NET MVC
   - Authorize .NET
 date: 2015-02-26 19:00:00
+alias: blog/html/2015/02/26/authorize_net_dpm_helper.html
 ---
 
 I recently started diving into learning about payment gateways and payment

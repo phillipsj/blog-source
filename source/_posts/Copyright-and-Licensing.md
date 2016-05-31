@@ -4,6 +4,7 @@ tags:
   - Copyright
   - Licensing
 date: 2014-05-29 20:00:00
+alias: blog/html/2014/05/29/copyright_and_licensing.html
 ---
 
 \*Disclaimer:  I am not a lawyer.

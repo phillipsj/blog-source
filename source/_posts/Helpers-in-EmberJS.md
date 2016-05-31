@@ -6,6 +6,7 @@ tags:
   - Handlebars
   - Ember-CLI
 date: 2014-11-04 19:00:00
+alias: blog/html/2014/11/04/helpers_in_emberjs.html
 ---
 
 EmberJS uses Handlebars as its template engine.

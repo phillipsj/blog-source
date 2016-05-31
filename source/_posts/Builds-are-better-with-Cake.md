@@ -5,6 +5,7 @@ tags:
   - Open Source
   - Cake
 date: 2015-10-18 20:00:00
+alias: blog/html/2015/10/18/builds_are_better_with_cake.html
 ---
 
 As most of you know, my team has been using Orchard to build our next application.

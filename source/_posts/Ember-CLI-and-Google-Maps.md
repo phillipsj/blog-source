@@ -6,6 +6,7 @@ tags:
   - Mapping
   - GIS
 date: 2014-11-19 19:00:00
+alias: blog/html/2014/11/19/ember_cli_and_google_maps.html
 ---
 
 This evening I started working on a project that I realize Ember is the perfect

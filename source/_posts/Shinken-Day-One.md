@@ -4,6 +4,7 @@ tags:
   - Monitoring
   - Python
 date: 2014-09-08 20:00:00
+alias: blog/html/2014/09/08/shinken_day_one.html
 ---
 
 I have been investigating monitoring tools to determine which

@@ -6,6 +6,7 @@ tags:
   - Cloud9
   - Static
 date: 2015-04-12 20:00:00
+alias: blog/html/2015/04/12/static_blog_generators_i_am_on_cloud9.html
 ---
 
 I am a big fan of using a static blog generator. I don’t have to worry, about

@@ -6,6 +6,7 @@ tags:
   - Handlebars
   - Ember-CLI
 date: 2014-11-17 19:00:00
+alias: blog/html/2014/11/17/ember_helpers_testing.html
 ---
 
 Following up with my last post, I forgot to address one of the key

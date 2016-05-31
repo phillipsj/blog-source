@@ -4,6 +4,7 @@ tags:
   - Dojo
   - JavaScript
 date: 2014-04-23 20:00:00
+alias: blog/html/2014/04/23/getting_to_know_dojo.html
 ---
 
 I have been wanting to dive into Dojo for sometime, but I have always let the

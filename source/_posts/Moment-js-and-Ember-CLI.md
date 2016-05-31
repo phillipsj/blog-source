@@ -6,6 +6,7 @@ tags:
   - Moment.js
   - Ember-CLI
 date: 2014-11-19 19:00:00
+alias: blog/html/2014/11/19/moment_js_and_ember_cli.html
 ---
 
 Moment.js is not inlcuded by default with Ember-CLI, so if you want to create a helper

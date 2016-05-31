@@ -4,6 +4,7 @@ tags:
   - EmberJS
   - Ember-CLI
 date: 2014-11-03 19:00:00
+alias: blog/html/2014/11/03/new_project_with_emberjs.html
 ---
 
 We are starting to embark on changing a few

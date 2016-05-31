@@ -4,6 +4,7 @@ tags:
   - Open Source
   - Cake
 date: 2015-12-04 19:00:00
+alias: blog/html/2015/12/04/cake_squirrel.html
 ---
 
 Just published a new package called [Cake.Squirrel](https://www.nuget.org/packages/Cake.Squirrel/). It integrates [Squirrel.Windows](https://github.com/Squirrel/Squirrel.Windows)
