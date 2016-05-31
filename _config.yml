@@ -12,8 +12,8 @@ timezone: America/New_York
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.phillipsj.net/
-root: /
+url: http://www.phillipsj.net/public
+root: /public/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -68,7 +68,9 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: https://github.com/phillipsj/phillipsj.github.io
+  branch: master
 
 # RSS
 feed:
