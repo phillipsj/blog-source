@@ -1,7 +1,8 @@
 # Header
 menu:
   Home: /
-  About: /about
+  About: /about  
+  Presentations: /presentations
   Archives: /archives
 rss: /atom.xml
 
