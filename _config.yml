@@ -4,7 +4,7 @@
 
 # Site
 title: Jamie Phillips
-subtitle:
+subtitle: Ramblings on software development and techology.
 description:
 author: Jamie Phillips
 language: en
@@ -63,9 +63,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: bootstrap-blog
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
