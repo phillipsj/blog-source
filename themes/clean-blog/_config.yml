@@ -1,0 +1,42 @@
+# Header
+menu:
+  Home: /
+  About: /about  
+  Presentations: /presentations
+  Archives: /archives
+  Github:
+    url: https://github.com/phillipsj
+    icon: github
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: 
+
+# URL of the Home page image
+index_cover: public/img/home-bg.jpg
+
+# Default post title
+default_post_title: A blog post
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname:
+  # Facebook comments
+  facebook:
+    appid:
+    comment_count: 5
+    comment_colorscheme: light
+
+# Google Analytics Tracking ID
+google_analytics: UA-56743201-1
+
+# Addthis ID
+addthis:
+
+# Social Accounts
+twitter_url: https://twitter.com/phillipsj73
+twitter_handle: phillipsj73
+facebook_url:
+github_url: https://github.com/phillipsj
+linkedin_url: https://www.linkedin.com/in/jamie-phillips-695927b0
+mailto:
