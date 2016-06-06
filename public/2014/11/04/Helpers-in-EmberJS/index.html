@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="EmberJS uses Handlebars as its template engine.To extend it, you create what Ember calls helpers.There are several ways in Ember to tackle a problem, ">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jamie Phillips">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Helpers in EmberJS"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="null" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Jamie Phillips"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content="http://www.phillipsj.net/publicundefined"/>
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="phillipsj73>" />
+    
+
+    <!-- Title -->
+    
+    <title>Helpers in EmberJS - Jamie Phillips</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56743201-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/public/">Jamie Phillips</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/public/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/public/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/public/presentations">
+                            
+                                Presentations
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/public/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/phillipsj">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.phillips.net/public/img/banner.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Helpers in EmberJS</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2014-11-04
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/public/tags/EmberJS/">#EmberJS</a> <a href="/public/tags/Ember-CLI/">#Ember-CLI</a> <a href="/public/tags/Helpers/">#Helpers</a> <a href="/public/tags/Handlebars/">#Handlebars</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>EmberJS uses Handlebars as its template engine.<br>To extend it, you create what Ember calls helpers.<br>There are several ways in Ember to tackle a problem, but<br>some are more optimal than others.</p>
+<p>I needed to create tags that use the <strong>mailto</strong> and **tel” attributes.<br>So achieve this I created helpers so my templates are a little more<br>semantic to read and understand what is happening.</p>
+<p>The first helper I created was a mailto helper. Using Ember-CLI is a nice way<br>to get started. Remember that helpers kind of require a multipart name, so make sure<br>not to create one with a single name as it tends to generate errors in EmberJS. Another tip<br>is to make sure that you wrap your html tag in the Ember.Handlebars.SafeString method so it<br>doesn’t escape the html when rendering.</p>
+<p>Getting Started:</p>
+<p>Lets create the mailto helper to start.</p>
+<p>‘’’<br>$ ember g helper mailtoLink<br>‘’’</p>
+<p>Now navigate to the helper file and add this code.</p>
+<script src="//gist.github.com/f27f6ee75de18b9a31af90fe4a700057.js?file=mailToLink.js"></script>
+<p>Now create the telLink helper to start.</p>
+<p>‘’’<br>$ ember g helper telLink<br>‘’’</p>
+<p>Now navigate to the helper file and add this code.</p>
+<script src="//gist.github.com/f27f6ee75de18b9a31af90fe4a700057.js?file=telLink.js"></script>
+<p>Now to use these you can just call these in your templates like so:</p>
+<script src="//gist.github.com/f27f6ee75de18b9a31af90fe4a700057.js?file=template.html"></script>
+<p>Ember makes lots of things really easy, but sometimes it not very clear how to<br>do others. Hope you find this helpful.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/phillipsj73" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/phillipsj" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jamie-phillips-695927b0" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; Copyright 2016, Jamie Phillips. Powered by <a target="_blank" href="https://hexo.io/">Hexo</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/public/js/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="/public/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>

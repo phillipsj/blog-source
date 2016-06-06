@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jamie Phillips</title>
+  <subtitle>Random musings</subtitle>
+  <link href="/public/atom.xml" rel="self"/>
+  
+  <link href="http://www.phillipsj.net/public/"/>
+  <updated>2016-05-31T00:12:01.649Z</updated>
+  <id>http://www.phillipsj.net/public/</id>
+  
+  <author>
+    <name>Jamie Phillips</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fun with Electron</title>
+    <link href="http://www.phillipsj.net/public/2016/05/13/Fun-with-Electron/"/>
+    <id>http://www.phillipsj.net/public/2016/05/13/Fun-with-Electron/</id>
+    <published>2016-05-14T00:00:00.000Z</published>
+    <updated>2016-05-31T00:12:01.649Z</updated>
+    
+    <content type="html">&lt;p&gt;So I have had the privilege to get to learn a little about &lt;a href=&quot;http://electron.atom.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Electron&lt;/a&gt;. My team&lt;br&gt;inherited an app that was built using &lt;a href=&quot;http://appjs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AppJS&lt;/a&gt;. Since that project is deprecated,&lt;br&gt;we needed to move it to a new platform. I started looking around and decided to&lt;br&gt;give Electron a try since I have been using &lt;a href=&quot;https://atom.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Atom&lt;/a&gt; and &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;VSCode&lt;/a&gt;. Another great&lt;br&gt;thing about Electron is that we can get to keep our deployment consistent since&lt;br&gt;it also uses &lt;a href=&quot;https://github.com/Squirrel/Squirrel.Windows&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Squirrel.Windows&lt;/a&gt; like we have started using for our other desktop&lt;br&gt;apps. An added bonus is we can use &lt;a href=&quot;http://facebook.github.io/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React&lt;/a&gt; also.&lt;/p&gt;
+&lt;p&gt;My only recommendation is that it helps to have the following items installed on&lt;br&gt;a Windows System as it will make building any native node modules easier.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.python.org/downloads/release/python-2711/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python 2.7.x&lt;/a&gt; matching the bitness of your Node.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=44266&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Visual C++ Compiler for Python 2.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.visualstudio.com/vs-2015-product-editions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Visual C++ for Visual Studio 2015&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.microsoft.com/en-us/windows/downloads/windows-8-1-sdk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Windows 8.1 SDK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;So I have had the privilege to get to learn a little about &lt;a href=&quot;http://electron.atom.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Electron&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="Electron" scheme="http://www.phillipsj.net/public/tags/Electron/"/>
+    
+      <category term="OSS" scheme="http://www.phillipsj.net/public/tags/OSS/"/>
+    
+      <category term="Node" scheme="http://www.phillipsj.net/public/tags/Node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript: The Orchard Way</title>
+    <link href="http://www.phillipsj.net/public/2015/12/18/JavaScript-The-Orchard-Way/"/>
+    <id>http://www.phillipsj.net/public/2015/12/18/JavaScript-The-Orchard-Way/</id>
+    <published>2015-12-19T00:00:00.000Z</published>
+    <updated>2016-05-31T00:23:39.728Z</updated>
+    
+    <content type="html">&lt;p&gt;So I have been attending the &lt;a href=&quot;http://www.orchardproject.net/discussions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Orchard community&lt;/a&gt; meetings since we started to&lt;br&gt;use Orchard for our current project. Orchard is a great system that is very&lt;br&gt;moduler, with hooks and interfaces that can be overridden in a very easy way, once&lt;br&gt;you learn it. So this past week, the discussion turned to what JavaScript framework&lt;br&gt;should be used for Orchard core javascript needs. We all know that the conversation&lt;br&gt;quickly went to &lt;a href=&quot;https://angularjs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Angular&lt;/a&gt;.  There were several other frameworks discussed, but the&lt;br&gt;top two were clearly Angular and &lt;a href=&quot;http://facebook.github.io/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ReactJS&lt;/a&gt;. Then an interesting question surfaced&lt;br&gt;from &lt;a href=&quot;http://weblogs.asp.net/bleroy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Bertrand&lt;/a&gt;, it was “Which one is the Orchard way?”. So I know that the Orchard&lt;br&gt;team has a very defined culture and I have heard that statement several times in the&lt;br&gt;past, but it got me wondering if a blog post or any formal statement of “The Orchard Way”&lt;br&gt;has been created. With that I stumbled on to a &lt;a href=&quot;https://weblogs.asp.net/bleroy/the-orchard-way&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;post&lt;/a&gt; by Bertrand that has the answer.&lt;/p&gt;
+&lt;p&gt;So with that answered, the next question is which framework is the closest to that&lt;br&gt;philosophy. After binging for around the internet to gather a few more opinions&lt;br&gt;to see if I felt differently I do not. ReactJS provies a very easy and clear&lt;br&gt;mental model. This is a very basic statement if what is happening to illustrate the point.&lt;br&gt;You create components that are encapsulated, reusable, and have a single responsibility.&lt;br&gt;Data is pushed down from each parent and the child component that needs some data recieves it&lt;br&gt;from the parent. Does this sound familiar, it sounds similar to Bertrand’s example,&lt;br&gt;where the car builder has assembelers that only fulfill one specific component and&lt;br&gt;they don’t worry about the other components. Now I am going to stretch the example&lt;br&gt;a litte, because I am sure if there is something need by the assemblers then a&lt;br&gt;call is made and more information is pushed down from a higher level, sounds a&lt;br&gt;lot like the one-way data flow provided forced by React. Which leads me to the qoute&lt;br&gt;found in &lt;a href=&quot;https://github.com/kmcclosk/reactjs-rxjs-example&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this&lt;/a&gt; readme, “Its (React) sort of like the Actor Model”, which I agree it&lt;br&gt;is kind of like that. So if you think about how each component is an actor that can&lt;br&gt;contain actors and those components send messages with actions back up, etc.&lt;/p&gt;
+&lt;p&gt;So to end, I do this that React is more like Elon’s factory than Greg’s, so that&lt;br&gt;is why I feel Orchard should choose React.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;So I have been attending the &lt;a href=&quot;http://www.orchardproject.net/discussions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Orchard community&lt;/a&gt; mee
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="ReactJS" scheme="http://www.phillipsj.net/public/tags/ReactJS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cake.Squirrel</title>
+    <link href="http://www.phillipsj.net/public/2015/12/04/Cake-Squirrel/"/>
+    <id>http://www.phillipsj.net/public/2015/12/04/Cake-Squirrel/</id>
+    <published>2015-12-05T00:00:00.000Z</published>
+    <updated>2016-05-31T00:17:55.056Z</updated>
+    
+    <content type="html">&lt;p&gt;Just published a new package called &lt;a href=&quot;https://www.nuget.org/packages/Cake.Squirrel/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cake.Squirrel&lt;/a&gt;. It integrates &lt;a href=&quot;https://github.com/Squirrel/Squirrel.Windows&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Squirrel.Windows&lt;/a&gt;&lt;br&gt;into the Cake pipeline so you can now create your Squirrel package using Cake.&lt;/p&gt;
+&lt;p&gt;Still a little work left to do, I would like to add a fluent API, so keep&lt;br&gt;checking back.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Just published a new package called &lt;a href=&quot;https://www.nuget.org/packages/Cake.Squirrel/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cake.Squirrel&lt;
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="Cake" scheme="http://www.phillipsj.net/public/tags/Cake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>I like surprises, especially when Cake is involved!</title>
+    <link href="http://www.phillipsj.net/public/2015/11/30/I-like-surprises-especially-when-Cake-is-involved/"/>
+    <id>http://www.phillipsj.net/public/2015/11/30/I-like-surprises-especially-when-Cake-is-involved/</id>
+    <published>2015-12-01T00:00:00.000Z</published>
+    <updated>2016-05-31T00:23:07.303Z</updated>
+    
+    <content type="html">&lt;p&gt;So I was working today to consume a Cake addin that isn’t fully baked. It is&lt;br&gt;an addin that we needed. So I cloned the repo and pushed a copy of the package&lt;br&gt;to a &lt;a href=&quot;https://www.myget.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MyGet.org&lt;/a&gt; to consume as part of our build. I added a custom NuGet.config&lt;br&gt;file to my Cake tools directory, but Cake would not install the addin. So I just&lt;br&gt;added it to the packages.config, still no dice.  I had to use the older syntax:&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/556e127e16ed712dbf0b.js?file=OldSyntax.cs&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I wasn’t satisfied with this solution, so I jumped on the Cake Gitter, who doesn’t&lt;br&gt;lover Gitter, and starting asking some questions. I was soon digging into the&lt;br&gt;source and discovered that as part of parsing the addin directive if you put the&lt;br&gt;source after the package name it woud use it. So now I could use the #addin syntax&lt;br&gt;like so:&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/9f6f8cac2a1bd05f0e9a.js?file=syntax.cs&quot;&gt;&lt;/script&gt;
+&lt;p&gt;So all you have to due is specify a source that can be consumed by NuGet.exe and&lt;br&gt;you can use the #addin syntax.&lt;/p&gt;
+&lt;p&gt;Such a pleasant surprise, Cake doesn’t dissapoint.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;So I was working today to consume a Cake addin that isn’t fully baked. It is&lt;br&gt;an addin that we needed. So I cloned the repo and pushed 
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="Cake" scheme="http://www.phillipsj.net/public/tags/Cake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web Compiler with a side of Cake</title>
+    <link href="http://www.phillipsj.net/public/2015/11/25/Web-Compiler-with-a-side-of-Cake/"/>
+    <id>http://www.phillipsj.net/public/2015/11/25/Web-Compiler-with-a-side-of-Cake/</id>
+    <published>2015-11-26T00:00:00.000Z</published>
+    <updated>2016-05-31T00:29:28.729Z</updated>
+    
+    <content type="html">&lt;p&gt;My team has been using &lt;a href=&quot;http://facebook.github.io/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React&lt;/a&gt; to create any front-end components that need&lt;br&gt;to be interactive. So far it has been a pleasant experience. We started using&lt;br&gt;JSX for our HTML. However, now that we are nearing a production release we wanted&lt;br&gt;to precompile the JSX. We had intially planned to use the &lt;a href=&quot;http://reactjs.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React.NET&lt;/a&gt; project, but&lt;br&gt;the JSX support has been dropped in support of using &lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Babel&lt;/a&gt;. Babel’s documentation&lt;br&gt;isn’t the best, so in looking for alternatives before diving in to Babel, I stumbled&lt;br&gt;across &lt;a href=&quot;https://github.com/madskristensen/WebCompiler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Web Compiler&lt;/a&gt; by Mads Kristensen. It just so happens that there is a&lt;br&gt;Visual Studio Extension for it and it will compile LESS, SASS, JSX, and CoffeeScript.&lt;br&gt;Since we are planning to use SASS in the future this appeared to be a great option. The&lt;br&gt;extension makes it easy to use as part of the IDE. There is also a nuget package for it&lt;br&gt;that makes it easy to use with MSBUILD. Now that all of our needs are covered it is&lt;br&gt;time to see if we can get it to work with Cake.&lt;/p&gt;
+&lt;p&gt;Configuring Web Compiler for use with Cake was extremely easy. Here are the steps&lt;br&gt;needed to have Web Compiler working as part of your Cake builds.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Edit your packages.config for Cake, you also need Cake.MSBuildTask.&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/d5d236d048341b4c37e0.js?file=packages.config&quot;&gt;&lt;/script&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now add the Web Compiler as an addin in your build.cake file.&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/5b6e22c7eddccbd9c90d.js?file=Build.cale&quot;&gt;&lt;/script&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now create your JSX compile tasks, now use the GetFiles to find all compilerconfig.json files.&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/75848d11d8d4a4ab091f.js?file=Build.cs&quot;&gt;&lt;/script&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It is that easy. I may, in the future, remove the need for the MSBuildTask runner.&lt;/p&gt;
+&lt;p&gt;Hope someone finds this of value.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;My team has been using &lt;a href=&quot;http://facebook.github.io/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React&lt;/a&gt; to create any front-end compon
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="Cake" scheme="http://www.phillipsj.net/public/tags/Cake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cake.XdtTransform</title>
+    <link href="http://www.phillipsj.net/public/2015/10/21/Cake-XdtTransform/"/>
+    <id>http://www.phillipsj.net/public/2015/10/21/Cake-XdtTransform/</id>
+    <published>2015-10-22T00:00:00.000Z</published>
+    <updated>2016-05-31T00:18:12.366Z</updated>
+    
+    <content type="html">&lt;p&gt;As part of moving our Orchard build over to Cake, I was trying to find a good&lt;br&gt;way to do the config transfomrs.  Cake offers a pretty good XML transform methods,&lt;br&gt;but I wanted a solution that used the XDT transform. A little quick googling and&lt;br&gt;I stumbled across this Github &lt;a href=&quot;https://github.com/cake-build/cake/issues/321&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issue&lt;/a&gt;, so with this post I created an addin that&lt;br&gt;adds this functionality. Not realy a big deal, I didn’t think it was necessary&lt;br&gt;to pull that into the core as it adds an extra dependency that is probably not&lt;br&gt;really needed, but it is a nice to have.  You can find it up on Nuget also.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As part of moving our Orchard build over to Cake, I was trying to find a good&lt;br&gt;way to do the config transfomrs.  Cake offers a pretty g
+    
+    </summary>
+    
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="Cake" scheme="http://www.phillipsj.net/public/tags/Cake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Builds are better with Cake</title>
+    <link href="http://www.phillipsj.net/public/2015/10/18/Builds-are-better-with-Cake/"/>
+    <id>http://www.phillipsj.net/public/2015/10/18/Builds-are-better-with-Cake/</id>
+    <published>2015-10-19T00:00:00.000Z</published>
+    <updated>2016-05-31T00:17:38.750Z</updated>
+    
+    <content type="html">&lt;p&gt;As most of you know, my team has been using Orchard to build our next application.&lt;br&gt;While we have found the majority of what Orchard has to offer great, there&lt;br&gt;has been trouble with the build for Orchard. We decided it was time to create a&lt;br&gt;different way to build Orchard that was easier for junior devs to understand and&lt;br&gt;easier for us to consume.&lt;/p&gt;
+&lt;p&gt;We narrowed it down to &lt;a href=&quot;https://github.com/psake/psake&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Psake&lt;/a&gt;, &lt;a href=&quot;http://fsharp.github.io/FAKE/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Fake&lt;/a&gt;, or &lt;a href=&quot;http://cakebuild.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cake&lt;/a&gt;, as these really don’t require&lt;br&gt;anything special that isn’t already on our build servers. I have used tools like&lt;br&gt;&lt;a href=&quot;http://albacorebuild.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Albacore&lt;/a&gt; in the past, but the extra dependency on Ruby was the deal breaker.&lt;/p&gt;
+&lt;p&gt;I have used all of these in the past, except for Cake. It is one of the newer&lt;br&gt;build systems on the scene and it just so happens to use C# for its syntax. I&lt;br&gt;have been happy with all, but considering we all primarily work in C#, it just&lt;br&gt;seemed like Cake would be the best fit.&lt;/p&gt;
+&lt;p&gt;After having worked with Cake for the last two weeks converting the Orchard build&lt;br&gt;from MSBuild file to Cake, I can say that Cake is now easily my favorite build tool&lt;br&gt;and I cannot forsee wanting to use much of anything else. The community has been&lt;br&gt;great and helpful, most of the important tooling has already been created, the&lt;br&gt;only thing that I have had an issue with is changing my way of thinking. The shift&lt;br&gt;from MSBuild to a build tool like Cake, sometimes throws your mind for a loop.&lt;/p&gt;
+&lt;p&gt;Cake supports of using MSBuild tasks, extra file helpers, Slack integration, etc.&lt;br&gt;all come in the form of an Addin.  Cake is easily extending using their Addin&lt;br&gt;structure, just add a little C# to a project, and Cake can now use that new feature.&lt;/p&gt;
+&lt;p&gt;I have easily converted customized MSBuild tasks that the Orchard project has created&lt;br&gt;into a Cake Addin called &lt;a href=&quot;https://www.nuget.org/packages/Cake.Orchard/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cake.Orchard&lt;/a&gt; and it is found on Nuget. I have almost&lt;br&gt;completed the conversation of the Orchard build and will be sharing that in the&lt;br&gt;near future.&lt;/p&gt;
+&lt;p&gt;Stay tuned if you are interested in adding Cake to your projects.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As most of you know, my team has been using Orchard to build our next application.&lt;br&gt;While we have found the majority of what Orchard ha
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="Cake" scheme="http://www.phillipsj.net/public/tags/Cake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Orchard and Azure AD Woes!</title>
+    <link href="http://www.phillipsj.net/public/2015/10/08/Orchard-and-Azure-AD-Woes/"/>
+    <id>http://www.phillipsj.net/public/2015/10/08/Orchard-and-Azure-AD-Woes/</id>
+    <published>2015-10-09T00:00:00.000Z</published>
+    <updated>2016-05-31T00:26:01.439Z</updated>
+    
+    <content type="html">&lt;p&gt;So my team and I have been using Orchard CMS to build the next version of our&lt;br&gt;product. Since we have been using Azure AD for authentication for our applicaions&lt;br&gt;it only made sense to wire Orchard and Azure AD together. The typical way that&lt;br&gt;it is suggested to be done is to Microsoft.Owin.Security.OpenIdConnect middleware.&lt;/p&gt;
+&lt;p&gt;So we wired this up for Orchard, which was not a straight forward feat given the&lt;br&gt;sparse documentation around OWIN integration. This all worked great locally and&lt;br&gt;on our dev server. We decided to finally push a versiont to Azure to work through&lt;br&gt;our &lt;a href=&quot;http://www.stickyminds.com/article/hudsons-bay-start&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hudson Bay Start&lt;/a&gt;, it would be awful to be close to a deadline and find&lt;br&gt;any suprises.&lt;/p&gt;
+&lt;p&gt;Well, I was hopeful as I have deployed stock Orchard to Azure several times getting&lt;br&gt;a feel for how it is going to work. The calamity struck, we were ramping up to&lt;br&gt;have some folks from another part of our business assist with creating content,&lt;br&gt;however, I enabled our custom modules and click the signin link and BAM! I&lt;br&gt;was greated with the following error:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The data protection operation was unsuccessful. This may have been caused by not&lt;br&gt;having the user profile loaded for the current thread’s user context, which may&lt;br&gt;be the case when the thread is impersonating.&lt;/strong&gt;&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/ffa9fbdafad35f46aaf8.js?file=DataProtectionError.txt&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I quickly started googling and found several suggestions. I tried several different&lt;br&gt;approaches, until I pulled out &lt;a href=&quot;https://www.jetbrains.com/decompiler/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;dotPeek&lt;/a&gt; and dug a little through&lt;br&gt;&lt;em&gt;Microsoft.Owin.Security&lt;/em&gt; and noticed that I needed a different IDataProtectionProvider&lt;br&gt;that doesn’t use DPAPI. I finally got to a &lt;a href=&quot;http://stackoverflow.com/questions/23455579/generating-reset-password-token-does-not-work-in-azure-website&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this&lt;/a&gt; on StackOverflow.  The suggestion&lt;br&gt;there was to implement the following:&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/aa374e21ab5bc9b0ea54.js?file=MachineKeyDataProtector.cs&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Now that I had this implementation, I tried several of the other posts on StackOverflow&lt;br&gt;trying to use Autofac to inject the dependency in, however it was working.&lt;/p&gt;
+&lt;p&gt;Again, I turned to dotPeek and was taking a look at what was going on with this&lt;br&gt;method:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;app.GetDataProtectionProvider()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;While looking at the method, I noticed this other extension method.:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;app.SetDataProtectionProvider(IDataProtectionProvider provider)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;So I added the following to my OwinMiddleware class in my Orchard Module&lt;br&gt;and &lt;strong&gt;IT WORKED!&lt;/strong&gt;&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/b4b6ba3367b48bb37cc6.js?file=OwinMiddlware.cs&quot;&gt;&lt;/script&gt;
+&lt;p&gt;This has been a two day issue that we have beent trying to determine what the cause.&lt;br&gt;I will be able to sleep soundly tonight.&lt;/p&gt;
+&lt;p&gt;Hope someone else finds this helpful.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;So my team and I have been using Orchard CMS to build the next version of our&lt;br&gt;product. Since we have been using Azure AD for authentic
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+      <category term="Azure" scheme="http://www.phillipsj.net/public/tags/Azure/"/>
+    
+      <category term="Owin" scheme="http://www.phillipsj.net/public/tags/Owin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Contrib to Dynamic Forms Module</title>
+    <link href="http://www.phillipsj.net/public/2015/10/01/Contrib-to-Dynamic-Forms-Module/"/>
+    <id>http://www.phillipsj.net/public/2015/10/01/Contrib-to-Dynamic-Forms-Module/</id>
+    <published>2015-10-02T00:00:00.000Z</published>
+    <updated>2016-05-31T00:18:54.166Z</updated>
+    
+    <content type="html">&lt;p&gt;Orchard CMS has this really cool module called Dynamic Forms.  It allows users&lt;br&gt;to create forms that can create submissions, bind to content types, or tie into&lt;br&gt;workflows. It is really powerful, but still a little rough around the edges. The&lt;br&gt;new 1.9.2 release is going to provide lots of polish to this feature.&lt;/p&gt;
+&lt;p&gt;One item I noticed today was that there are form fields for most types of inputs&lt;br&gt;that you can create for content.  However, there is not a form field for URLs.&lt;br&gt;Probably not a big deal, however the particular reason that I am using Dynamic&lt;br&gt;Forms is for a content type that does have a URL field and that input needs to&lt;br&gt;be validated. So I quickly got in and got dirty. I created a URL form field and&lt;br&gt;just finished my pull request.  I hope it get accepted. If you would like to&lt;br&gt;take a look you can hope over to my &lt;a href=&quot;https://github.com/phillipsj&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; and take a look.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Orchard CMS has this really cool module called Dynamic Forms.  It allows users&lt;br&gt;to create forms that can create submissions, bind to co
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Dynamic Forms" scheme="http://www.phillipsj.net/public/tags/Dynamic-Forms/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Orchard, Gulp, and VS2015 Build Errors</title>
+    <link href="http://www.phillipsj.net/public/2015/09/29/Orchard-Gulp-and-VS2015-Build-Errors/"/>
+    <id>http://www.phillipsj.net/public/2015/09/29/Orchard-Gulp-and-VS2015-Build-Errors/</id>
+    <published>2015-09-30T00:00:00.000Z</published>
+    <updated>2016-05-31T00:26:18.113Z</updated>
+    
+    <content type="html">&lt;p&gt;Recently, my team and I, have started using Visual Studio 2015 while working&lt;br&gt;on our Orchard project. Orchard has started using Gulp to manage building some&lt;br&gt;of the javascript used in the Layouts and Dynamic Forms modules. Since VS 2015&lt;br&gt;detects and automatically watches Gulp files, if you have a parameter set at the&lt;br&gt;top of the Gulp file, node modules start automatically downloading and all JS&lt;br&gt;and CSS start getting processed. This is great, until you recieve the following&lt;br&gt;error when publishing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The “CollectFilesinFolder” task failed unexpectedly. System.IO.PathTooLongException&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This error is thrown during the build due to the node_modules having crazy&lt;br&gt;file path lengths. The easiest way to circumvent this issue is to configure the&lt;br&gt;Layouts and Dynamic Forms modules project file to exclude the node_modules&lt;br&gt;folder.  This is quick and easy by adding the ExlcudeFoldersFromDeployment tag&lt;br&gt;in the first property group of each project file.&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/ec49732c325b7de55d19.js?file=ExcludeExample.xml&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Once that has been added to those project files, publishing now works. Also with&lt;br&gt;this change my GIT deployments to an Azure Website magically started working&lt;br&gt;too. There seems to be a fix in place according to this Github &lt;a href=&quot;https://github.com/OrchardCMS/Orchard/issues/5649&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issue&lt;/a&gt;, I am curious&lt;br&gt;if it is the same solution or not.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Recently, my team and I, have started using Visual Studio 2015 while working&lt;br&gt;on our Orchard project. Orchard has started using Gulp to
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Gulp" scheme="http://www.phillipsj.net/public/tags/Gulp/"/>
+    
+      <category term="VS2015" scheme="http://www.phillipsj.net/public/tags/VS2015/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Orchard Layouts with JSON.NET</title>
+    <link href="http://www.phillipsj.net/public/2015/09/11/Orchard-Layouts-with-JSON-NET/"/>
+    <id>http://www.phillipsj.net/public/2015/09/11/Orchard-Layouts-with-JSON-NET/</id>
+    <published>2015-09-12T00:00:00.000Z</published>
+    <updated>2016-05-31T00:26:32.080Z</updated>
+    
+    <content type="html">&lt;p&gt;I have been developing a custom module that uses the Dynamic Forms module to&lt;br&gt;programitically create a form. When creating a form you need to also create a&lt;br&gt;layout. Below is an example from the PageCommands.cs in the Orchard&lt;br&gt;Pages module for creating a layout.&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/8b7d4344331c36cd338a.js?file=StringLayout.cs&quot;&gt;&lt;/script&gt;
+&lt;p&gt;This just looks unpleasing and error prone. I would like to look at creating&lt;br&gt;something like &lt;a href=&quot;https://github.com/DarthFubuMVC/htmltags&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HtmlTags&lt;/a&gt;, which would create a fluent and error free way to&lt;br&gt;build layouts. However, that is going to take a little effort to get figured out.&lt;br&gt;Until then, I decided I would try to use &lt;a href=&quot;http://www.newtonsoft.com/json&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSON.NET&lt;/a&gt; to build the layout. I feel that&lt;br&gt;using the JSON.NET objects make it easier and less error prone to generate larger&lt;br&gt;layouts.&lt;/p&gt;
+&lt;p&gt;Here is an example using JSON.NET:&lt;/p&gt;
+&lt;script src=&quot;//gist.github.com/948e2cb818d9e8439204.js?file=JsonLayout.cs&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I am going to spend some time looking for a better solution. As far as performance&lt;br&gt;goes, it does increase usage a little, but the improvement to readability is worth&lt;br&gt;it.&lt;/p&gt;
+&lt;p&gt;Thanks for reading.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I have been developing a custom module that uses the Dynamic Forms module to&lt;br&gt;programitically create a form. When creating a form you n
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First Orchard Pull Request</title>
+    <link href="http://www.phillipsj.net/public/2015/09/09/First-Orchard-Pull-Request/"/>
+    <id>http://www.phillipsj.net/public/2015/09/09/First-Orchard-Pull-Request/</id>
+    <published>2015-09-10T00:00:00.000Z</published>
+    <updated>2016-05-31T00:22:05.007Z</updated>
+    
+    <content type="html">&lt;p&gt;Lately my team and I have been working with &lt;a href=&quot;http://www.orchardproject.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Orchard&lt;/a&gt; CMS. We picked Orchard&lt;br&gt;because we are .NET developers and Orchard provided such a great framework to&lt;br&gt;start building our new system with that it put us months ahead. In addition we&lt;br&gt;did need the capabilities provided by the CMS modules, but in reality Orchard&lt;br&gt;could just have the CMS modules deactivated and still provide a great base.&lt;/p&gt;
+&lt;p&gt;Now to my pull request.  I just submitted a pull request to Orchard for&lt;br&gt;documentation around the dynamic forms module. The documentation could use a&lt;br&gt;little more work, but I at least wanted to get some of the basics in place. I&lt;br&gt;just followed along with the previous custom forms module and the great &lt;a href=&quot;http://www.ideliverable.com/blog/customizing-user-registration-and-login-with-dynamic-forms-and-workflows&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;post&lt;/a&gt;&lt;br&gt;on IDeliverable’s blog, the post is a little dated, but still a great refernce.&lt;/p&gt;
+&lt;p&gt;I hope to be posting more about Orchard shortly. My team already has a couple&lt;br&gt;of pull requests and we are looking to submit more than just documentation. I&lt;br&gt;also have a few ideas for modules that I would like to create.  With this long&lt;br&gt;weekend, I may be able to make at least one module happen.&lt;/p&gt;
+&lt;p&gt;Thanks for reading.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Lately my team and I have been working with &lt;a href=&quot;http://www.orchardproject.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Orchard&lt;/a&gt; CMS. We p
+    
+    </summary>
+    
+    
+      <category term="Orchard" scheme="http://www.phillipsj.net/public/tags/Orchard/"/>
+    
+      <category term="Open Source" scheme="http://www.phillipsj.net/public/tags/Open-Source/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bottom or Top Line Development</title>
+    <link href="http://www.phillipsj.net/public/2015/07/28/Bottom-or-Top-Line-Development/"/>
+    <id>http://www.phillipsj.net/public/2015/07/28/Bottom-or-Top-Line-Development/</id>
+    <published>2015-07-29T00:00:00.000Z</published>
+    <updated>2016-05-31T00:15:17.248Z</updated>
+    
+    <content type="html">&lt;p&gt;On my journey into management, I have picked up a copy of &lt;a href=&quot;https://pragprog.com/book/rdbcd/behind-closed-doors&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Behind Closed Doors&lt;/a&gt;&lt;br&gt;from the &lt;a href=&quot;https://pragprog.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Pragmatic Bookshelf&lt;/a&gt;. I love their books and so far this one is&lt;br&gt;shaping up to be a good one. Now to the point of this post, there is an aside&lt;br&gt;in the book that discusses being a group that works directly on a product that&lt;br&gt;generates revenue or being a group that supports the company to sell the companies&lt;br&gt;product. The difference being, one group generates top line, while the other group&lt;br&gt;contributes to the bottom line. This is just one of those things that I didn’t&lt;br&gt;see coming and it hurt. All I can think is WOW! I naturally think in the bottom&lt;br&gt;line and since my first job was working in government, I am not suprised.  All&lt;br&gt;of my past development has been on products that support the business in their&lt;br&gt;job, I have never actually worked on a product that was the business. Such a&lt;br&gt;small aside, but it is so true. The focus of the aside is primarily focused on&lt;br&gt;defining the mission on the group, but I think it is way deeper than that. I&lt;br&gt;intrinsically find enjoyment on building products that enable others to perform&lt;br&gt;their best. Maybe it is the maximizer in me, but I it just clicks. I find the idea&lt;br&gt;of a software product intriguing, however I have made career choices that have not&lt;br&gt;lead down that road. When I orignally moved into this position that I am in, I&lt;br&gt;thought here is my chance to develop a product, but what I realize is that I am&lt;br&gt;developing a product that helps the business deliver their products. Just WOW!&lt;br&gt;I wanted to share this with everyone, until next time.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;On my journey into management, I have picked up a copy of &lt;a href=&quot;https://pragprog.com/book/rdbcd/behind-closed-doors&quot; target=&quot;_blank&quot; r
+    
+    </summary>
+    
+    
+      <category term="Agile" scheme="http://www.phillipsj.net/public/tags/Agile/"/>
+    
+      <category term="Shipping" scheme="http://www.phillipsj.net/public/tags/Shipping/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Moving into Management</title>
+    <link href="http://www.phillipsj.net/public/2015/06/14/Moving-into-Management/"/>
+    <id>http://www.phillipsj.net/public/2015/06/14/Moving-into-Management/</id>
+    <published>2015-06-15T00:00:00.000Z</published>
+    <updated>2016-05-31T00:24:49.448Z</updated>
+    
+    <content type="html">&lt;p&gt;I have finally made the move into management. As of this week I am now a manager&lt;br&gt;of a small group. I still get to do development, but I get to help my teammates&lt;br&gt;in a different capacity. It is a going to be a rocky ride for me personally and&lt;br&gt;this past week is proof of that. I have tried to move into management in the&lt;br&gt;past, but there was always a HR policy that penalized me because I didn’t have&lt;br&gt;a related degree (local government), however reflecting on that now, I realize&lt;br&gt;that I do not think I was really ready. Funny how a few more years of expereince&lt;br&gt;changes everything. I do find that along with trying to meet the needs of my&lt;br&gt;teammates, I am having to step up and be a product manager. We are an “agile”&lt;br&gt;team and we have a product owner, but I am finding that a product manager is&lt;br&gt;very different from a product owner. We need someone to create a product&lt;br&gt;roadmap and focus on what is going to both challenge the team and drive the&lt;br&gt;product forward. Also as a manager strategy is at a totally different level or&lt;br&gt;maybe it is just me feeling that it is different. Hopefully, I will be able to&lt;br&gt;start finding time to keep in a regular blogging rythm. I have lots of thoughts&lt;br&gt;I want to share.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I have finally made the move into management. As of this week I am now a manager&lt;br&gt;of a small group. I still get to do development, but 
+    
+    </summary>
+    
+    
+      <category term="Management" scheme="http://www.phillipsj.net/public/tags/Management/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Two weeks with the Surface 3</title>
+    <link href="http://www.phillipsj.net/public/2015/05/28/Two-weeks-with-the-Surface-3/"/>
+    <id>http://www.phillipsj.net/public/2015/05/28/Two-weeks-with-the-Surface-3/</id>
+    <published>2015-05-29T00:00:00.000Z</published>
+    <updated>2016-05-31T00:29:00.849Z</updated>
+    
+    <content type="html">&lt;p&gt;I found myself needing a new computer and decided that I wanted an ultra portable&lt;br&gt;device. After looking around and considering price, I decided that I wanted to&lt;br&gt;give the Surface 3 a shot. I have been using cloud based development services&lt;br&gt;like Cloud9 and I am finding I really like it so it wasn’t a big stretch. The&lt;br&gt;primary focus of getting the Surface 3 was to have a device that allows me to&lt;br&gt;take full advantage of OneNote so I could get better organized. So far the&lt;br&gt;having the ability to actual write notes is awesome and works wonderfully. The&lt;br&gt;TypeCover is the real deal and actually feels better than most keyboards that I&lt;br&gt;have used. I am finding that using touch is natural, but I do catch myself&lt;br&gt;getting frustrated with the trackpad, only to realize that I could have just&lt;br&gt;used my finger.&lt;/p&gt;
+&lt;p&gt;Now on to the actual hardware. It is a very well crafted piece of hardware that&lt;br&gt;feels well in the hand and is a pleasure to view. The size is not really a&lt;br&gt;detriment and I am finding the resolution and aspect ratio great. The RAM and&lt;br&gt;CPU do all that I need and the storage is fine also. I only notice any&lt;br&gt;performance issues when doing extremely heavy storage tasks. With that just said,&lt;br&gt;I was also very aware of what I purchased and did not set my expectations very&lt;br&gt;high. I will say that I am constantly amazed at the amount of effeciency that&lt;br&gt;both Intel and Microsoft have been able to squeze out of this form factor.&lt;/p&gt;
+&lt;p&gt;I am planning to do another post after a couple of months. Feel free to contact&lt;br&gt;me if you have an specific questions and I will try to answer those.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I found myself needing a new computer and decided that I wanted an ultra portable&lt;br&gt;device. After looking around and considering price, 
+    
+    </summary>
+    
+    
+      <category term="Surface" scheme="http://www.phillipsj.net/public/tags/Surface/"/>
+    
+      <category term="Microsoft" scheme="http://www.phillipsj.net/public/tags/Microsoft/"/>
+    
+      <category term="Hardware" scheme="http://www.phillipsj.net/public/tags/Hardware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Wow, lots of agile stuff</title>
+    <link href="http://www.phillipsj.net/public/2015/05/13/Wow-lots-of-agile-stuff/"/>
+    <id>http://www.phillipsj.net/public/2015/05/13/Wow-lots-of-agile-stuff/</id>
+    <published>2015-05-14T00:00:00.000Z</published>
+    <updated>2016-05-31T00:30:37.064Z</updated>
+    
+    <content type="html">&lt;p&gt;A couple of weeks after my last post about Software Faster, there seems to be&lt;br&gt;lots of these posts popping up in my reader about agile. We may have reached&lt;br&gt;this critical point in the agile movement were we are starting to realize that&lt;br&gt;in the name of being agile we are being rigid. Here are the recent posts that&lt;br&gt;jumped out at me.&lt;/p&gt;
+&lt;h2 id=&quot;Agile-Results&quot;&gt;&lt;a href=&quot;#Agile-Results&quot; class=&quot;headerlink&quot; title=&quot;Agile Results&quot;&gt;&lt;/a&gt;Agile Results&lt;/h2&gt;&lt;p&gt;This &lt;a href=&quot;http://blogs.msdn.com/b/jmeier/archive/2015/05/08/task-management-for-teams.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;post&lt;/a&gt; my J.D. Meier about “Task Management for Teams” is very interesting&lt;br&gt;and I didn’t realize that “Agile Results” existed until this post. Funny thing&lt;br&gt;about this method it is very similiar to what our team decided that we are&lt;br&gt;going to report on. Ours are very business oriented and focused, but in general&lt;br&gt;this is what we have been doing for well over nine months and the business is&lt;br&gt;super happy and so is upper management as listing your “goals” aka Wins for each&lt;br&gt;time box makes it clear what we are trying to do and if we got it done. I have&lt;br&gt;purchased the &lt;a href=&quot;http://gettingresults.com/wiki/Main_Page&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;book&lt;/a&gt; and will do a full review shortly, but it looks like it&lt;br&gt;is going to provide some additional techniques to tweak what we are already&lt;br&gt;doing.&lt;/p&gt;
+&lt;h2 id=&quot;The-Failure-of-Agile&quot;&gt;&lt;a href=&quot;#The-Failure-of-Agile&quot; class=&quot;headerlink&quot; title=&quot;The Failure of Agile&quot;&gt;&lt;/a&gt;The Failure of Agile&lt;/h2&gt;&lt;p&gt;Another post about &lt;a href=&quot;http://blog.toolshed.com/2015/05/the-failure-of-agile.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The Failure of Agile&lt;/a&gt; was posted last week by Andy Hunt&lt;br&gt;about how he thinks agile has lost its way. I couldn’t agree more, we focus a&lt;br&gt;lot on a specific technique and rules, which are great for getting started, but&lt;br&gt;at some point the training wheels need to be removed and team members need to&lt;br&gt;adapt their methods to focus on how they and their customers do business. He&lt;br&gt;introduces a new method called &lt;a href=&quot;http://growsmethod.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GROWS&lt;/a&gt; which is really what succesful teams have&lt;br&gt;been doing from the start. I think one of the most important statements in the&lt;br&gt;entire post is when he starts talking about how junior members need the rules.&lt;br&gt;It is true, but if the more senior members of the team are not nurturing the&lt;br&gt;other team members to grow into being truly agile then of course that is when&lt;br&gt;it fails.&lt;/p&gt;
+&lt;p&gt;I am lucky that I am part of a team where we are always growing and learning.&lt;br&gt;We have trust and communication which allows us to truly perform and be&lt;br&gt;adaptive and responsive to the business we support. Our cusotmers are our focus&lt;br&gt;and we try our best to deliver the technical solutions as we need them.&lt;br&gt;Hopefully everything from the above two blog posts can be incorporated into&lt;br&gt;our approaches to aiding our customers.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A couple of weeks after my last post about Software Faster, there seems to be&lt;br&gt;lots of these posts popping up in my reader about agile.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Inspiration, Software Faster</title>
+    <link href="http://www.phillipsj.net/public/2015/04/20/Inspiration-Software-Faster/"/>
+    <id>http://www.phillipsj.net/public/2015/04/20/Inspiration-Software-Faster/</id>
+    <published>2015-04-21T00:00:00.000Z</published>
+    <updated>2016-05-31T00:23:25.153Z</updated>
+    
+    <content type="html">&lt;p&gt;I typically listen to podcasts while I mow my yard. I find mowing relaxing and&lt;br&gt;enjoy doing it myself. However, some of the recent episodes of the podcasts that&lt;br&gt;I like did not catch my interest, so I went digging through some archives. I&lt;br&gt;stumbled upon &lt;a href=&quot;http://www.dotnetrocks.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DotNetRocks&lt;/a&gt; episode &lt;a href=&quot;http://www.dotnetrocks.com/default.aspx?showNum=1118&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;1118&lt;/a&gt; with &lt;a href=&quot;http://dannorth.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dan North&lt;/a&gt;. All I can say is wow,&lt;br&gt;what an episode. I started out my career with the view point that I just needed&lt;br&gt;to deliver software that made peoples life better. I didn’t care about the&lt;br&gt;craftsmanship, as long as it worked and people found it useful, I was happy.&lt;br&gt;Somewhere along the way I lost that, over my short eight year career I became&lt;br&gt;to focused on writing “great” software, that I lost my primary focus, which&lt;br&gt;was writing software that delivered business value. So here is the email&lt;br&gt;that I sent my team today, you will notice lots of qoutes and paraphrasing&lt;br&gt;from that episode. I just wanted to share and hope others get back to what&lt;br&gt;really matters, putting solutions in the hands of people to improve their&lt;br&gt;lives.&lt;/p&gt;
+&lt;h2 id=&quot;The-Email&quot;&gt;&lt;a href=&quot;#The-Email&quot; class=&quot;headerlink&quot; title=&quot;The Email&quot;&gt;&lt;/a&gt;The Email&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;The goal of software delivery is to minimize the lead time to business&lt;br&gt;impact. Everything else is detail.&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is super important concept to understand. We are here to add value to the&lt;br&gt;business so delivering impactful improvements and solutions is what is the most&lt;br&gt;important. The &lt;a href=&quot;http://agilemanifesto.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Agile Manifesto&lt;/a&gt; is not about doing SCRUM, Extreme Programming,&lt;br&gt;etc. These are all commoditized versions of the ideas behind the manifesto that&lt;br&gt;have occurred over the 14 years following it. I think our team is a great&lt;br&gt;example of all of these values. We do lots of these already and I think we have&lt;br&gt;good values as a team. We are integrated into the business and now that all of&lt;br&gt;us are sitting with the business, the opportunities to add more value should&lt;br&gt;be more evident.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Velocity = Speed in a direction&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;Story points are not points going toward a particular goal. We have lost&lt;br&gt;sight of solving business problems, agile is now about producing software&lt;br&gt;faster. We have strayed from the whole point.&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;Nothing we deliver is worth anything unless it delivers the businesses&lt;br&gt;objective.&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Agile metrics are total BS, they are worthless as far as the business is&lt;br&gt;concerned, because it doesn’t answer the questions that the business cares&lt;br&gt;about. We should use business metrics to determine how effective we are.&lt;br&gt;A fine example of that is the call center metrics that were displayed at the&lt;br&gt;community meeting. Those are the types of metrics we should be measure using.&lt;br&gt;Points, sprints, etc. doesn’t show the business value that we are actually&lt;br&gt;delivering.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Until customers are actually using it,&lt;br&gt;then we are making stuff up.&lt;br&gt;—Richard Campbell&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;Two conflicting values, simultaneously. I will write the best software I&lt;br&gt;can. I will have not emotional attachment to the software that I write.&lt;br&gt;Transfer emotional attachment of the code to the product, the impact on&lt;br&gt;users. Cared less about the beauty of the code and more on the impact on&lt;br&gt;success and happiness of the users. Software is the means to the end.&lt;br&gt;As little software as needed to get there.&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;Successful software teams blur the lines between the business&lt;br&gt;and development.&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I think we should keep doing the bi-weekly planning/retrospective meeting&lt;br&gt;that sets goals, but I think we should do away with points and I don’t think we&lt;br&gt;really need a scrum master, but an organizer. We are all “scrum masters” and we&lt;br&gt;should keep each other moving forward and impacting the business. We need to&lt;br&gt;keep having our “SCRUMS” since that is super valuable interaction, maybe we&lt;br&gt;should call them huddles or something else as not to confuse our approach with&lt;br&gt;a well-known process.&lt;/p&gt;
+&lt;p&gt;I also think we should determine all the business metrics that are reflective&lt;br&gt;of the work we are doing and we should monitor these to determine the type of&lt;br&gt;impact we are having. Some of these may take a complete year before coming to&lt;br&gt;fruition, but we should be playing the long game to begin with, the short game&lt;br&gt;will be evident in the attitudes that our customers have about us.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;GANTT Chart = Product Backlog&lt;br&gt;—Dan North&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(&lt;em&gt;Borrowed from Dan North&lt;/em&gt;) So think about it like surgery.  We don’t want more&lt;br&gt;stitches more procedures, we want the surgeon to use the least invasive&lt;br&gt;procedure to treat the medical issue. That is how we should look at what we do.&lt;br&gt;What is the simplest solution we can provide that is technically sound and eases&lt;br&gt;the businesses issue.&lt;/p&gt;
+&lt;p&gt;So I know this is very long, but I think that we actually have our process.&lt;br&gt;I have spent a lot of time focusing on process improvement, when I should have&lt;br&gt;been focusing on distilling the process that was emerging out of how we are&lt;br&gt;actually delivering value to the business. Lets keep shipping features that add&lt;br&gt;value to the business and individual users. I want to create a product that&lt;br&gt;people love to use and makes their day better. We have been working hard to get&lt;br&gt;there and it is evident in the call center metrics, so lets keep doing this&lt;br&gt;until we stop being successful or until we determine that it is no longer&lt;br&gt;adding value, then we will evolve.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I typically listen to podcasts while I mow my yard. I find mowing relaxing and&lt;br&gt;enjoy doing it myself. However, some of the recent epis
+    
+    </summary>
+    
+    
+      <category term="Agile" scheme="http://www.phillipsj.net/public/tags/Agile/"/>
+    
+      <category term="Shipping" scheme="http://www.phillipsj.net/public/tags/Shipping/"/>
+    
+      <category term="Craftsmanship" scheme="http://www.phillipsj.net/public/tags/Craftsmanship/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Static Blog Generators: I am on Cloud9</title>
+    <link href="http://www.phillipsj.net/public/2015/04/12/Static-Blog-Generators-I-am-on-Cloud9/"/>
+    <id>http://www.phillipsj.net/public/2015/04/12/Static-Blog-Generators-I-am-on-Cloud9/</id>
+    <published>2015-04-13T00:00:00.000Z</published>
+    <updated>2016-05-31T00:28:46.188Z</updated>
+    
+    <content type="html">&lt;p&gt;I am a big fan of using a static blog generator. I don’t have to worry, about&lt;br&gt;security, database, or hosting. This blog is powered by &lt;a href=&quot;http://tinkerer.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tinkerer&lt;/a&gt; which is an&lt;br&gt;extension built on &lt;a href=&quot;http://sphinx-doc.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sphinx&lt;/a&gt;, Sphinx is primarily used to create documentation&lt;br&gt;for Python projects, but is really useful in general for lots of things.&lt;/p&gt;
+&lt;p&gt;One issue I have come across with most static blog generators is that most have&lt;br&gt;a depedency that doesn’t run well on windows, not a issue normally, but I have&lt;br&gt;been moving back to the windows ecosystem lateley. Another complaint/issue&lt;br&gt;is that you can’t just edit the blog without sitting at your computer or a&lt;br&gt;computer you own.&lt;/p&gt;
+&lt;p&gt;To get around both of these issues and to test out working in the cloud, I&lt;br&gt;decided to give &lt;a href=&quot;https://ide.c9.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cloud9&lt;/a&gt; a try to see how I like it. So far all I can say is&lt;br&gt;that it’s awesome and works great. I started this post on my desktop and now&lt;br&gt;I am working on my laptop without needing to run a git pull because it’s in the&lt;br&gt;cloud. Now I am finising this post on my desktop, yet again a seamless&lt;br&gt;transition. The autocomplete provided by their editor is nice and they have a&lt;br&gt;dark them. You can also preview any html you are working on in a browser inside&lt;br&gt;the editor. I have yet to try &lt;a href=&quot;https://www.nitrous.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nitrous.io&lt;/a&gt;, but so far I am pleased with what&lt;br&gt;Cloud9 has to offer.&lt;/p&gt;
+&lt;p&gt;After this experience, the allure of a Chromebook is growing as I think that I&lt;br&gt;could really get by just using a cloud based stack. Yes, it does require&lt;br&gt;connectivity, but if you really think about it, when was the last time you&lt;br&gt;felt productive without connectivity.  I know that I don’t at all.&lt;/p&gt;
+&lt;p&gt;Thanks, for reading.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I am a big fan of using a static blog generator. I don’t have to worry, about&lt;br&gt;security, database, or hosting. This blog is powered by 
+    
+    </summary>
+    
+    
+      <category term="Tinkerer" scheme="http://www.phillipsj.net/public/tags/Tinkerer/"/>
+    
+      <category term="Blog" scheme="http://www.phillipsj.net/public/tags/Blog/"/>
+    
+      <category term="Cloud9" scheme="http://www.phillipsj.net/public/tags/Cloud9/"/>
+    
+      <category term="Static" scheme="http://www.phillipsj.net/public/tags/Static/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Snap back to reality, oh, there goes the ORM</title>
+    <link href="http://www.phillipsj.net/public/2015/04/09/Snap-back-to-reality-oh-there-goes-the-ORM/"/>
+    <id>http://www.phillipsj.net/public/2015/04/09/Snap-back-to-reality-oh-there-goes-the-ORM/</id>
+    <published>2015-04-10T00:00:00.000Z</published>
+    <updated>2016-05-31T00:28:12.256Z</updated>
+    
+    <content type="html">&lt;p&gt;I find myself going down this rabbit hole every six months it seems. I get&lt;br&gt;lured in by the promises of an ORM. First it was &lt;a href=&quot;http://www.castleproject.org/projects/activerecord/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Castle’s Active Record&lt;/a&gt;, then&lt;br&gt;Linq2SQL, then Entity Framework, finally I settled on &lt;a href=&quot;http://nhibernate.info/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NHibernate&lt;/a&gt; as it worked&lt;br&gt;better than others and I just liked the feel of it all. Then I discovered&lt;br&gt;&lt;a href=&quot;https://github.com/StackExchange/dapper-dot-net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dapper&lt;/a&gt;, oh how I really like Dapper. Dapper provides just enough abstraction to&lt;br&gt;ADO .NET that I do not have to fiddle with data adapters or readers, or build&lt;br&gt;commands. It provides all the power of SQL that I find that I need and all the&lt;br&gt;object mapping I could want.&lt;/p&gt;
+&lt;p&gt;The hardest issue that I have with Dapper after using an ORM that bites me every&lt;br&gt;time is the easy resolution of related objects. The building of an &lt;a href=&quot;http://www.elegantcoding.com/2011/08/object-graph.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;object graph&lt;/a&gt;&lt;br&gt;with an ORM is just an after thought until those &lt;a href=&quot;http://ayende.com/blog/1328/combating-the-select-n-1-problem-in-nhibernate&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;N+1 issues&lt;/a&gt; creep up or you&lt;br&gt;realize that you are retrieving so much extra cruft that you just don’t really&lt;br&gt;need. The great part about Dapper is that those things have to be intentianal&lt;br&gt;and at times feel really manual, however, I have found that execute the extra&lt;br&gt;queries to build an object with relations is actually faster most of the time,&lt;br&gt;and if it isn’t I do not take the penalty throughout the entire applicaiton.&lt;/p&gt;
+&lt;p&gt;Just had this on my mind and thought I would share. Hopefully the future me&lt;br&gt;doesn’t keep falling in this, “It looks so easy” trap and I just stick with&lt;br&gt;using a micro orm, that provides just enough.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I find myself going down this rabbit hole every six months it seems. I get&lt;br&gt;lured in by the promises of an ORM. First it was &lt;a href=&quot;h
+    
+    </summary>
+    
+    
+      <category term="Dapper" scheme="http://www.phillipsj.net/public/tags/Dapper/"/>
+    
+      <category term="ORM" scheme="http://www.phillipsj.net/public/tags/ORM/"/>
+    
+      <category term="Reality" scheme="http://www.phillipsj.net/public/tags/Reality/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Authorize .NET Helpers</title>
+    <link href="http://www.phillipsj.net/public/2015/03/21/Authorize-NET-Helpers/"/>
+    <id>http://www.phillipsj.net/public/2015/03/21/Authorize-NET-Helpers/</id>
+    <published>2015-03-22T00:00:00.000Z</published>
+    <updated>2016-05-31T00:14:25.568Z</updated>
+    
+    <content type="html">&lt;p&gt;So I made this &lt;a href=&quot;http://www.phillipsj.net/blog/html/2015/02/26/authorize_net_dpm_helper.html&quot;&gt;post&lt;/a&gt; a couple of weeks ago about how to wrap the Authorize.NET SDK into&lt;br&gt;a better form to make it easier to integrate with ASP .NET MVC. So I decided to take it the&lt;br&gt;next step and I created a NuGet &lt;a href=&quot;https://www.nuget.org/packages/AuthorizeNet.Helpers/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;package&lt;/a&gt; for it, which can be found here. The &lt;a href=&quot;https://github.com/phillipsj/authorize-net-helpers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;source code&lt;/a&gt;&lt;br&gt;is up on GitHub under an Apache license. I have also hooked it up to &lt;a href=&quot;http://www.appveyor.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AppVeyor&lt;/a&gt; to build&lt;br&gt;anything pushed to master and deploy the update to NuGet. AppVeyor is really cool and super&lt;br&gt;easy to use. I have mostly used TeamCity and Jenkins, but many of these new services make&lt;br&gt;it even easier. Hope everyone finds this useful, please feel free to open any issues for&lt;br&gt;improvements or suggestions and I will try to make them. If you have anything you would like&lt;br&gt;to contribute please let me know.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;So I made this &lt;a href=&quot;http://www.phillipsj.net/blog/html/2015/02/26/authorize_net_dpm_helper.html&quot;&gt;post&lt;/a&gt; a couple of weeks ago about
+    
+    </summary>
+    
+    
+      <category term="Authorize" scheme="http://www.phillipsj.net/public/tags/Authorize/"/>
+    
+      <category term=".NET" scheme="http://www.phillipsj.net/public/tags/NET/"/>
+    
+      <category term="NuGet" scheme="http://www.phillipsj.net/public/tags/NuGet/"/>
+    
+  </entry>
+  
+</feed>

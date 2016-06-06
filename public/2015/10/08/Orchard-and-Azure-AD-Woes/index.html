@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="So my team and I have been using Orchard CMS to build the next version of ourproduct. Since we have been using Azure AD for authentication for our app">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jamie Phillips">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Orchard and Azure AD Woes!"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="null" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Jamie Phillips"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content="http://www.phillipsj.net/publicundefined"/>
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="phillipsj73>" />
+    
+
+    <!-- Title -->
+    
+    <title>Orchard and Azure AD Woes! - Jamie Phillips</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56743201-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/public/">Jamie Phillips</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/public/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/public/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/public/presentations">
+                            
+                                Presentations
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/public/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/phillipsj">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.phillips.net/public/img/banner.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Orchard and Azure AD Woes!</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2015-10-08
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/public/tags/Orchard/">#Orchard</a> <a href="/public/tags/Open-Source/">#Open Source</a> <a href="/public/tags/Azure/">#Azure</a> <a href="/public/tags/Owin/">#Owin</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>So my team and I have been using Orchard CMS to build the next version of our<br>product. Since we have been using Azure AD for authentication for our applicaions<br>it only made sense to wire Orchard and Azure AD together. The typical way that<br>it is suggested to be done is to Microsoft.Owin.Security.OpenIdConnect middleware.</p>
+<p>So we wired this up for Orchard, which was not a straight forward feat given the<br>sparse documentation around OWIN integration. This all worked great locally and<br>on our dev server. We decided to finally push a versiont to Azure to work through<br>our <a href="http://www.stickyminds.com/article/hudsons-bay-start" target="_blank" rel="external">Hudson Bay Start</a>, it would be awful to be close to a deadline and find<br>any suprises.</p>
+<p>Well, I was hopeful as I have deployed stock Orchard to Azure several times getting<br>a feel for how it is going to work. The calamity struck, we were ramping up to<br>have some folks from another part of our business assist with creating content,<br>however, I enabled our custom modules and click the signin link and BAM! I<br>was greated with the following error:</p>
+<p><strong>The data protection operation was unsuccessful. This may have been caused by not<br>having the user profile loaded for the current thread’s user context, which may<br>be the case when the thread is impersonating.</strong></p>
+<script src="//gist.github.com/ffa9fbdafad35f46aaf8.js?file=DataProtectionError.txt"></script>
+<p>I quickly started googling and found several suggestions. I tried several different<br>approaches, until I pulled out <a href="https://www.jetbrains.com/decompiler/" target="_blank" rel="external">dotPeek</a> and dug a little through<br><em>Microsoft.Owin.Security</em> and noticed that I needed a different IDataProtectionProvider<br>that doesn’t use DPAPI. I finally got to a <a href="http://stackoverflow.com/questions/23455579/generating-reset-password-token-does-not-work-in-azure-website" target="_blank" rel="external">this</a> on StackOverflow.  The suggestion<br>there was to implement the following:</p>
+<script src="//gist.github.com/aa374e21ab5bc9b0ea54.js?file=MachineKeyDataProtector.cs"></script>
+<p>Now that I had this implementation, I tried several of the other posts on StackOverflow<br>trying to use Autofac to inject the dependency in, however it was working.</p>
+<p>Again, I turned to dotPeek and was taking a look at what was going on with this<br>method:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.GetDataProtectionProvider()</span><br></pre></td></tr></table></figure>
+<p>While looking at the method, I noticed this other extension method.:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.SetDataProtectionProvider(IDataProtectionProvider provider)</span><br></pre></td></tr></table></figure>
+<p>So I added the following to my OwinMiddleware class in my Orchard Module<br>and <strong>IT WORKED!</strong></p>
+<script src="//gist.github.com/b4b6ba3367b48bb37cc6.js?file=OwinMiddlware.cs"></script>
+<p>This has been a two day issue that we have beent trying to determine what the cause.<br>I will be able to sleep soundly tonight.</p>
+<p>Hope someone else finds this helpful.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/phillipsj73" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/phillipsj" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jamie-phillips-695927b0" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; Copyright 2016, Jamie Phillips. Powered by <a target="_blank" href="https://hexo.io/">Hexo</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/public/js/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="/public/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
