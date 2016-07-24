@@ -4,7 +4,9 @@ tags:
   - Open Source
   - Cake
   - Tutorials
+date: 2016-07-24 15:22:36
 ---
+
 
 Hi, my name is Jamie and I am a [Cake](http://cakebuild.net/) addin author that doesn't build my addins using Cake. This seems kind of wrong too me and this is a bonus for you. I am going to walk you through how to use Cake to build your project, run your tests, create a [NuGet](https://www.nuget.org/) package, then publish to NuGet. I am going to walk you through performing this for my [Cake.XdtTransform](https://github.com/phillipsj/Cake.XdtTransform) project. The project is hosted on GitHub so you can see the final build. I am going to be using the wonderful extension created for [VsCode](https://code.visualstudio.com/) and will be doing most of my work in it, I will discuss the alternatives if you are not using VsCode. If you are going to continue with VsCode, then I would install the Cake Extension that has been created.
 
@@ -13,6 +15,12 @@ Hi, my name is Jamie and I am a [Cake](http://cakebuild.net/) addin author that 
 ## Step 1:
 
 By default all projects that use Cake starts with two files, the bootstrapper script, *build.ps1*, if on windows, or *build.sh*, on linux. The other file that is needed is the cake file, typically called *build.cake*.  In VsCode, open the project that you want to automate with Cake, open the command palette and run the Cake: Install Bootstrapper command, the select the bootstrapper file type that fits your system, in this example I have selected *Powershell*.  You should now see the *build.ps1* file in your project directory. At this point, there is not much more you are going to need to do with the bootstrapper file.
+
+![](/images/cake-tutorial/VsCodeCakeBootstrapper.png)
+
+![](/images/cake-tutorial/VsCodeCakeSelectBootstrapperType.png)
+
+![](/images/cake-tutorial/VsCodeCakeSelectBootstrapperInstalled.png)
 
 ## Step 2:
 
@@ -35,13 +43,13 @@ var configuration = Argument("configuration", "Release");
 
 At this point, lets open a powershell window and run:
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 $ .\build.ps1
 {% endcodeblock %}
 
 You should see the following output:
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 Preparing to run build script...
 Running build script...
 Analyzing build script...
@@ -56,6 +64,8 @@ Compiling build script...
 {% endcodeblock %}
 
 You will also notice that a tools folder has been added to your project with a Cake folder, nuget.exe, and a packages.config.  This the bootstrapper getting nuget and configuring it, and then install Cake. This is pretty awesome as it doesn't require anything to be committed to your repository.
+
+![](/images/cake-tutorial/BootstrapperGeneratedFoldersAndFiles.png)
 
 ## Step 3:
 
@@ -138,13 +148,13 @@ RunTarget(target);
 
 Now we need to execute the Cake file to see if all the work we have done will execute and build our project.
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 $ .\build.ps1
 {% endcodeblock %}
 
 You should see the following output:
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 Preparing to run build script...
 Running build script...
 Analyzing build script...
@@ -244,13 +254,13 @@ Task("Default")
 
 Now we need to execute our Cake file and make sure nothing has been broken.
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 $ .\build.ps1
 {% endcodeblock %}
 
 You should see the following output:
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 C:\Users\cphil\code\Cake.XdtTransform [develop ≡ +0 ~1 -0 !]> .\build.ps1
 Preparing to run build script...
 Running build script...
@@ -308,13 +318,13 @@ Task("Package")
 
 Now to test our handy work, we are going to run the Cake file, but this time we are going to pass a target of *Package*. What this will do is execute the *Package* task.
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 $ .\build.ps1 -Target Package
 {% endcodeblock %}
 
 You should see the following output:
 
-{% codeblock lang:shell-script %}
+{% codeblock lang:shell %}
 C:\Users\cphil\code\Cake.XdtTransform [develop ≡ +0 ~1 -0 !]> .\build.ps1
 Preparing to run build script...
 Running build script...
