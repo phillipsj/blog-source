@@ -24,10 +24,6 @@ Now you need to grab any arguments you want to pass to your cake file. The first
 
 {% codeblock lang:csharp %}
 
-//////////////////////////////////////////////////////////////////////
-// ARGUMENTS
-//////////////////////////////////////////////////////////////////////
-
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
@@ -61,4 +57,295 @@ Compiling build script...
 
 You will also notice that a tools folder has been added to your project with a Cake folder, nuget.exe, and a packages.config.  This the bootstrapper getting nuget and configuring it, and then install Cake. This is pretty awesome as it doesn't require anything to be committed to your repository.
 
+## Step 3:
 
+Now we need to do any preparation. In our example, we need to prepare by setting up our build directory and making our solution file path.
+
+{% codeblock lang:csharp %}
+
+var buildDir = Directory("./src/Cake.XdtTransform/bin") + Directory(configuration);
+var solution = "./src/Cake.XdtTransform.sln";
+
+{% endcodeblock %}
+
+This is very basic, but you can imagine if you have a more complex setup like for a really complex build, you may have dozens of items that need prepared.
+
+## Step 4:
+
+Now we get to tasks. This is the targets that you will be executing to perform your build. Lots of items will be going on in this step and I will do my best to walk you through all of these.
+
+### Cleaning the Directory
+
+Always a good idea to clean any directories that you will be writing too.
+
+{% codeblock lang:csharp %}
+
+Task("Clean")
+    .Does(() =>{
+        CleanDirectory(buildDir);
+});
+
+{% endcodeblock %}
+
+### Restoring NuGet Packages
+
+This task introduces a new concept. If you look at the *.IsDependentOn* online, you will notice that we pass it the clean task. What this is doing is telling Cake, hey, before *Restore-NuGet-Packages* executes, the *Clean* tasks needs to occur first. This is the method that you will use to link your build tasks together to make sure that no matter which task you pass to be executed any dependent tasks are executed first. Finally, we call *NuGetRestore* which will fetch our NuGet packages. 
+
+{% codeblock lang:csharp %}
+
+Task("Restore-NuGet-Packages")
+    .IsDependentOn("Clean")
+    .Does(() => {
+        NuGetRestore(solution);
+});
+
+{% endcodeblock %}
+
+### Buiding the solution
+
+Now that we have clean directories and restored NuGet packages we are ready to perform our build. We will create our build task with a dependency on *Restore-NuGet-Packages* to ensure that our packages are always restored before executing a build. We are going to use MSBuild to build our project.
+
+{% codeblock lang:csharp %}
+
+Task("Build")
+    .IsDependentOn("Restore-NuGet-Packages")
+    .Does(() =>{
+      // Use MSBuild
+      MSBuild(solution, settings =>
+        settings.SetConfiguration(configuration));  
+});
+
+{% endcodeblock %}
+
+## Finishing the Cake file
+
+Now that we have the basics in place, lets finish the basic setup that needs to happen. We need to create a default task that will execute one of the tasks we just defined.
+
+{% codeblock lang:csharp %}
+
+Task("Default")
+    .IsDependentOn("Build");
+
+{% endcodeblock %}
+
+Next we need to actually tell Cake to run the target parameter, which is you remember when we defined our arguments we defaulted to *Default*.
+
+{% codeblock lang:csharp %}
+
+RunTarget(target);
+
+{% endcodeblock %}
+
+Now we need to execute the Cake file to see if all the work we have done will execute and build our project.
+
+{% codeblock lang:shell-script %}
+$ .\build.ps1
+{% endcodeblock %}
+
+You should see the following output:
+
+{% codeblock lang:shell-script %}
+Preparing to run build script...
+Running build script...
+Analyzing build script...
+Processing build script...
+Compiling build script...
+
+========================================
+Clean
+========================================
+Executing task: Clean
+Cleaning directory C:/Users/cphil/code/Cake.XdtTransform/src/Cake.XdtTransform/bin/Release
+Finished executing task: Clean
+
+========================================
+Restore-NuGet-Packages
+========================================
+Executing task: Restore-NuGet-Packages
+MSBuild auto-detection: using msbuild version '14.0' from 'C:\Program Files (x86)\MSBuild\14.0\bin'.
+All packages listed in packages.config are already installed.
+Finished executing task: Restore-NuGet-Packages
+
+========================================
+Build
+========================================
+Executing task: Build
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/24/2016 2:32:43 PM.
+     1>Project "C:\Users\cphil\code\Cake.XdtTransform\src\Cake.XdtTransform.sln" on node 1 (Build target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Release|Any CPU".
+     1>Project "C:\Users\cphil\code\Cake.XdtTransform\src\Cake.XdtTransform.sln" (1) is building "C:\Users\cphil\code\C
+       ake.XdtTransform\src\Cake.XdtTransform\Cake.XdtTransform.csproj" (3) on node 1 (default targets).
+     ......
+     2>Done Building Project "C:\Users\cphil\code\Cake.XdtTransform\src\Cake.XdtTransform.Tests\Cake.XdtTransform.Tests
+       .csproj" (default targets).
+     1>Done Building Project "C:\Users\cphil\code\Cake.XdtTransform\src\Cake.XdtTransform.sln" (Build target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.38
+Finished executing task: Build
+
+========================================
+Default
+========================================
+Executing task: Default
+Finished executing task: Default
+
+Task                          Duration
+--------------------------------------------------
+Clean                         00:00:00.0091045
+Restore-NuGet-Packages        00:00:00.3995194
+Build                         00:00:00.4472326
+Default                       00:00:00.0098848
+--------------------------------------------------
+Total:                        00:00:00.8657413
+{% endcodeblock %}
+
+So it looks like we had a successful run of our Cake file. At this point we could just stop, but continue on as now we are getting into the more advanced topics.
+
+## Step 5: 
+
+In this step we are going to create a task that will execute our unit tests. In this example we are using [Fixie](http://fixie.github.io/), however, most major unit testing frameworks are supported. We will be adding a new concept that this step. We are going to start using the *tool* directive. The *tool* directive tells Cake that it needs to download additional tools to perform one of the tasks. The *tool* directive will place the tool package in the *tools* directory that the bootstrapper downloads NuGet and Cake too.
+
+At the top of our Cake build file put the following *tool* directive.
+
+{% codeblock lang:csharp %}
+
+#tool "nuget:?package=Fixie"
+
+{% endcodeblock %}
+
+Now that we have the Fixie unit test runner being downloaded as part of our Cake file, we need to create our unit test task. In this task we use a pattern to tell Cake to search all directories looking for a bin folder and a configuration folder that matches and return all dlls with the name *Tests.dll*. Also note that our task is dependent on the build task.
+
+{% codeblock lang:csharp %}
+
+Task("Run-Unit-Tests")
+    .IsDependentOn("Build")
+    .Does(() =>{
+        Fixie("./src/\*\*/bin/" + configuration + "/*.Tests.dll");
+});
+
+{% endcodeblock %}
+
+Now that we have our test task in place and I want the default behavior to always run the unit tests. So I need to change the default task.
+
+{% codeblock lang:csharp %}
+
+Task("Default")
+    .IsDependentOn("Run-Unit-Tests");
+
+{% endcodeblock %}
+
+Now we need to execute our Cake file and make sure nothing has been broken.
+
+{% codeblock lang:shell-script %}
+$ .\build.ps1
+{% endcodeblock %}
+
+You should see the following output:
+
+{% codeblock lang:shell-script %}
+C:\Users\cphil\code\Cake.XdtTransform [develop ≡ +0 ~1 -0 !]> .\build.ps1
+Preparing to run build script...
+Running build script...
+Analyzing build script...
+Processing build script...
+Installing tools...
+Compiling build script...
+
+...................
+
+========================================
+Run-Unit-Tests
+========================================
+Executing task: Run-Unit-Tests
+------ Testing Assembly Cake.XdtTransform.Tests.dll ------
+
+6 passed, 0 failed, took 0.33 seconds (Fixie 1.0.2).
+
+Finished executing task: Run-Unit-Tests
+
+========================================
+Default
+========================================
+Executing task: Default
+Finished executing task: Default
+
+Task                          Duration
+--------------------------------------------------
+Clean                         00:00:00.0179829
+Restore-NuGet-Packages        00:00:00.4070517
+Build                         00:00:00.4498772
+Run-Unit-Tests                00:00:00.4413167
+Default                       00:00:00.0104593
+--------------------------------------------------
+Total:                        00:00:01.3266878
+{% endcodeblock %}
+
+It looks like our tests all executed successfully and now we celebrate, but wait what good is all this work if we are not sharing it with the world.
+
+Step 6:
+
+If you look in the source directory under the Cake.XdtTransform folder you will notice that there is a nuspec file located in the directory called Cake.XdtTransform.nuspec. Since we have a nuspec file we should go ahead and create a NuGet package while we are here.
+
+Luckily, the creators of Cake have already created the necessary tools to perform the packaging. All we need to do is create a task. We are going to name the task *Package* and we are going to make it dependent on the *Run-Unit-Tests* task, because we do not want to package if we fail our tests. We are not going to make this the default task as we want this task to be intentional.
+
+{% codeblock lang:csharp %}
+
+Task("Package")
+    .IsDependentOn("Run-Unit-Tests")
+    .Does(() =>{
+        NuGetPack("./src/Cake.XdtTransform/Cake.XdtTransform.nuspec", ​new NuGetPackSettings());
+})
+
+{% endcodeblock %}
+
+Now to test our handy work, we are going to run the Cake file, but this time we are going to pass a target of *Package*. What this will do is execute the *Package* task.
+
+{% codeblock lang:shell-script %}
+$ .\build.ps1 -Target Package
+{% endcodeblock %}
+
+You should see the following output:
+
+{% codeblock lang:shell-script %}
+C:\Users\cphil\code\Cake.XdtTransform [develop ≡ +0 ~1 -0 !]> .\build.ps1
+Preparing to run build script...
+Running build script...
+Analyzing build script...
+Processing build script...
+Installing tools...
+Compiling build script...
+
+...................
+
+========================================
+Package
+========================================
+Executing task: Package
+Attempting to build package from 'Cake.XdtTransform.temp.nuspec'.
+Successfully created package 'C:\Users\cphil\code\Cake.XdtTransform\Cake.XdtTransform.0.10.0.0.nupkg'.
+Finished executing task: Package
+
+Task                          Duration
+--------------------------------------------------
+Clean                         00:00:00.0127528
+Restore-NuGet-Packages        00:00:00.4139956
+Build                         00:00:00.4605471
+Run-Unit-Tests                00:00:00.4670142
+Package                       00:00:00.4101675
+--------------------------------------------------
+Total:                        00:00:01.7644772
+{% endcodeblock %}
+
+# The finish line
+
+So there you go, a basic walk through using Cake to perform the majority of the tasks that will need to be performed when working on a project. I have purposely left off the publishing of the project to a server or in this case NuGet, as there are more steps involved and those tasks are more about preference at that point. I know that I will probably let my CI server for the project, AppVeyor pick up the NuGet packae as an artifact and publish it. I may revist that in the new future as I learn to integrate Cake with a CI server.
+
+Thanks for reading and hopefully you found this helpful.
