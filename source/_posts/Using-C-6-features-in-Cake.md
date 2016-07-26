@@ -3,17 +3,21 @@ title: 'Using C# 6 features in Cake'
 tags:
   - Open Source
   - Cake
+date: 2016-07-25 21:47:22
 ---
+
 
 I like a lot of features available in C# 6, but my favorite is string interpolation. I think it makes ecstatically pleasing code. It is much cleaner and more expressive.
 
 {% codeblock lang:csharp %}
 
+var name = "Dave";
+
 // String.Format example
-var messageWithFormat = string.Format("I'm sorry, {0} I'm afraid I can't do that.", "Dave");
+var messageWithFormat = string.Format("I'm sorry, {0} I'm afraid I can't do that.", name);
 
 // String Interpolation
-var messageWithInterpolation = $"I'm sorry, {"Dave"} I'm afraid I can't do that.";
+var messageWithInterpolation = $"I'm sorry, {name} I'm afraid I can't do that.";
 
 {% endcodeblock %}
 
