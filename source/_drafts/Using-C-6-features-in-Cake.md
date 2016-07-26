@@ -32,3 +32,33 @@ Invoke-Expression "& `"$CAKE_EXE`" `"$Script`" -target=`"$Target`" -configuratio
 # Altered
 Invoke-Expression "& `"$CAKE_EXE`" `"$Script`" -target=`"$Target`" -configuration=`"$Configuration`" -verbosity=`"$Verbosity`" $UseMono $UseDryRun -experimental $ScriptArgs"
 {% endcodeblock %}
+
+Now you can make your Cake even more elegant, in my opinion. Here are a few examples of places that string interpolation can be used that I enjoy.
+
+{% codeblock lang:csharp %}
+
+// Before
+Fixie("./src/\**/bin/" + configuration + "/*.Tests.dll");
+
+// After
+Fixie($"./src/\**/bin/{configuration}/*.Tests.dll");
+
+// Before
+throw new DirectoryNotFoundException(
+        string.Format(
+            "Deployment target directory not found {0}",
+            deploymentPath
+            )
+        );
+
+// After
+throw new DirectoryNotFoundException(
+            $"Deployment target directory not found {deploymentPath}"
+            )
+        );
+
+
+{% endcodeblock %}
+
+Thanks for reading.
+
