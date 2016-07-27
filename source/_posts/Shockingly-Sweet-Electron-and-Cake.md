@@ -8,7 +8,7 @@ date: 2016-07-23 22:48:40
 ---
 
 
-We have recently started using [Electron](http://electron.atom.io/) for an application we have been development. We have enjoyed the experience so much we have decided as a team that all desktop applications going forward will be Electron based. This is great as it keeps the web development skills sharp even when making a desktop application, plus it leverages our knowledge in web technologies and we don't have to context switch. 
+We have recently started using [Electron](http://electron.atom.io/) for an application we have been developing. We have enjoyed the experience so much we have decided as a team that all desktop applications going forward will be Electron based. This is great as it keeps the web development skills sharp even when making a desktop application, plus it leverages our knowledge in web technologies and we don't have to context switch. 
 
 To keep the consistency with all our other projects we decided to use Cake to build our Electron applications. We use [electron-builder](https://github.com/electron-userland/electron-builder) to perform the heavy lifting with a few NPM scripts.  We then execute those NPM scripts using Cake. You can take a look at the complete solution [here](https://github.com/phillipsj/shockingly-sweet). Below I will walk you through the Cake file.
 
