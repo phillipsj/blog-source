@@ -7,7 +7,7 @@ date: 2016-07-25 21:47:22
 ---
 
 
-I like a lot of features available in C# 6, but my favorite is string interpolation. I think it makes ecstatically pleasing code. It is much cleaner and more expressive.
+I like a lot of features available in C# 6, but my favorite is string interpolation. I think it makes aesthetically pleasing code, cleaner and more expressive.
 
 {% codeblock lang:csharp %}
 
