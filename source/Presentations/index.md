@@ -9,6 +9,8 @@ Here are the presentations that I have given. Listed by date, with the newest li
 
 * Putting your builds to work for you, a piece of Cake!
 
+<iframe src="http://www.slideshare.net/JamiePhillips15/slideshelf" width="615px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+
 ## 2015 CodeStock
 
 * Up For Grabs: Contributing to Open Source Projects
