@@ -1,8 +1,8 @@
 # Header
 menu:
   Home: /
-  About: /about  
-  Presentations: /presentations
+  About: /About  
+  Presentations: /Presentations
   Archives: /archives
   Github:
     url: https://github.com/phillipsj
