@@ -4,7 +4,9 @@ tags:
   - Open Source
   - Cake
   - Tutorials
+date: 2016-07-31 15:22:46
 ---
+
 
 In this tutorial, I will be walking you through the basics of creating a Cake Addin. There are going to be assumptions that you know how to create a project using Visual Studio or your tool oc choice. It also assumes you know how to use NuGet to install packages in your project.  Let's get started, we are going to create a really simple addin that gives you the ability to upload a file to an FTP site.
 
@@ -18,7 +20,7 @@ Cake aliases are convenience methods that make your functionality available from
 
 The first file that needs created is *FtpClient.cs*, this will house the primary logic of our FTP addin. After that file has been created go ahead and create the *FtpAliases.cs* class which will house our aliases.
 
-## Step 2: The code
+## Step 2: Code
 
 Now lets start building our our *FtpClient*. We are just going to have the basic functionality of uploading a file to an FTP server to start.  So lets create our constructor.
 
