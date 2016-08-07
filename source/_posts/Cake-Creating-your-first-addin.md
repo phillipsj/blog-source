@@ -8,7 +8,7 @@ date: 2016-07-31 15:22:46
 ---
 
 
-In this tutorial, I will be walking you through the basics of creating a Cake Addin. There are going to be assumptions that you know how to create a project using Visual Studio or your tool oc choice. It also assumes you know how to use NuGet to install packages in your project.  Let's get started, we are going to create a really simple addin that gives you the ability to upload a file to an FTP site.
+In this tutorial, I will be walking you through the basics of creating a Cake Addin. There are going to be assumptions that you know how to create a project using Visual Studio or your tool of choice. It also assumes you know how to use NuGet to install packages in your project.  Let's get started, we are going to create a really simple addin that gives you the ability to upload a file to an FTP site.
 
 ## Step 1: Setup
 
