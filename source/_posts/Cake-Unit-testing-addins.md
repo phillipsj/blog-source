@@ -7,10 +7,7 @@ tags:
 date: 2016-08-07 08:41:18
 ---
 
-
 I am back with another confession to make, my [Cake.XdtTransform]() project does not have any unit testing. So I decided this is a great opportunity to create a tutorial for unit testing a Cake addin.
-
-<%- toc(page.content) %>
 
 ## Step 1: Create unit test project
 
